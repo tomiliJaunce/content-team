@@ -1,70 +1,88 @@
 # Handoff: Researcher → Content Specialist
 
-**Article:** "How to Discover What's Actually Broken in Your SaaS Tool"
-**Series:** The SaaS Tax — Part 4
-**Date:** 2026-03-19
+**Article:** "24 Problems, 7 Clusters — What We Found Wrong with Our ATS"
+**Series:** The SaaS Tax — Part 5
+**Date:** 2026-03-30
 **Status:** Research complete. Ready for content brief.
 
 ---
 
 ## What Was Found
 
-### Primary Methodology Frameworks
-Three established UX/product research frameworks anchor this article's methodology:
+### Core Data: The 7 Clusters with Full Cost Breakdown
 
-1. **Jobs to Be Done (JTBD)** — reframes workshop questions from "what is broken?" to "what are you trying to accomplish at this step?" Surfaces pain that users have adapted around because they assumed it was unfixable. Popularized by Clayton Christensen / Tony Ulwick (Strategyn).
-2. **Critical Incident Technique (CIT)** — developed by John C. Flanagan (1954). Collects specific memorable incidents (times the tool significantly failed) rather than general impressions. Key insight: CIT surfaces high-impact problems, not just frequently-reported ones. One user reporting a critical incident may reveal something more important than a problem reported by ten.
-3. **Impact × Frequency Matrix** — Pain vs. Frequency prioritization. Individual scoring before group discussion prevents anchoring bias. When scores diverge by 2+ points, discuss evidence — the goal is calibration, not consensus.
+All data is Appunite internal, verified in prior research cycles.
 
-### Key External Stats
-- **80% of SaaS features are rarely or never used** (Pendo 2019 Feature Adoption Report — still largest study of its kind)
-- **12% of features drive 80% of daily usage** (Pendo 2019)
-- Appunite's own audit of Recruitee: **~10% of features actively used**
+| # | Cluster | Direct (PLN/yr) | Opportunity (PLN/yr) | Total (PLN/yr) |
+|---|---|---|---|---|
+| 1 | Reports calculate with errors | 1,728 | 99,792 | 101,520 |
+| 2 | Metrics not customisable | 2,304 | — | 2,304 |
+| 3 | Funnels not elastic | 780 | 4,320 | 5,100 |
+| 4 | No competency matrices + sourcing | 6,036 | 4,056 | 10,092 |
+| 5 | No interview transcription + feedback | 4,680 | 19,956 | 24,636 |
+| 6 | Calendar/scheduling gaps | 3,888 | — | 3,888 |
+| 7 | GDPR compliance gaps | 3,108 | — | 3,108 |
+| **Total** | | **22,524** | **128,124** | **150,648** |
 
-### Carry-Over Stats (from Parts 1–3 — already verified)
-- **24 distinct problems, 7 clusters** from Recruitee workshops (Appunite internal)
-- **Direct cost: 22,524 PLN/yr; Total cost incl. opportunity: 150,648 PLN/yr; Build budget: 86,000 PLN** (Appunite internal)
-- **Direct ROI: -74%; Full ROI: +75%** (Appunite internal)
-- **85% of 150,648 PLN total is opportunity cost** — largest contributor is Cluster 1 (reporting errors, 101,520 PLN/yr)
-- Single largest attribution assumption: 50% of failed hires attributable to inaccurate reporting data. Changing from 50% to 0% flips ROI from +75% to -74%.
+Key facts to communicate throughout the article:
+- 85% of 150,648 PLN total is opportunity cost
+- Cluster 1 alone = 67% of total cost (101,520 PLN/yr)
+- Cluster 1's opportunity cost rests on one attribution assumption: 50% of failed hires attributable to inaccurate reporting data
+- Build budget: 86,000 PLN; Direct ROI: -74%; Full ROI: +75%
 
----
+### Individual Pain Points (24 total across 7 clusters)
 
-## Key Source URLs
-- Pendo Feature Adoption Report: https://www.pendo.io/resources/the-2019-feature-adoption-report/
-- NN/G — Critical Incident Technique: https://www.nngroup.com/articles/critical-incident-technique/
-- Product School — JTBD Framework: https://productschool.com/blog/product-fundamentals/jtbd-framework
-- GLIDR — Pain vs Frequency Scores: https://help.glidr.io/en/articles/2826779-pain-vs-frequency-scores
+Detailed breakdown in research.md Section 3. Summary counts:
+- Cluster 1: 4 problems (time-to-hire miscalculation, hire count showing 0%, cost-per-hire not computable, data refresh lag)
+- Cluster 2: 3 problems (custom pipeline stages, custom metric definitions, non-configurable dashboard)
+- Cluster 3: 3 problems (stages can't be edited after candidates enter, no retroactive reassignment, templates don't carry weights)
+- Cluster 4: 4 problems (no competency scoring, past candidates not surfaced, sourcing not competency-level, no structured assessment integration)
+- Cluster 5: 3 problems (no recording/transcription, freeform feedback only, no side-by-side comparison)
+- Cluster 6: 3 problems (no native calendar integration, no automated reminders, no reschedule workflow)
+- Cluster 7: 3 problems (no automated deletion, no consent tracking, no data export for portability requests)
 
----
+### The Meta-Pattern (Section 3 Key Insight)
 
-## Caveats
-1. Pendo 2019 is dated but still the largest feature adoption study available — cite with year, no newer study supersedes it
-2. JTBD framework has two variants (Christensen vs. Ulwick/ODI) — article does not need to adjudicate; reference as a widely-used product discovery framework
-3. Appunite's internal cost numbers and workshop outputs are all verified in prior research cycles — no re-sourcing needed
+These aren't bugs. Recruitee works fine for its target market. The structural limitations exist because the tool was built for the median case — SMBs with moderate hiring volumes of generalist roles. Appunite is not that case:
+- Low volume, high quality bar → tool optimized for throughput
+- Narrow talent pool → needs relationship tracking over time
+- Complex technical evaluation → standard notes field can't hold structured competency data
+- Strategic data ownership → needs to cross-reference hiring outcomes with engineer performance
+
+This framing is essential: every limitation can be explained as "designed for millions of users." Never as "badly built."
+
+### Vulnerability Element (Required by Brief)
+
+The brief explicitly requires showing vulnerability. Honest admissions available:
+- The 23-day vs 31-day discrepancy had been there for months before the audit. Everyone was using the wrong number.
+- Several workarounds had become so embedded they were no longer experienced as problems — they were "just how hiring works."
+- GDPR gaps could have been caught with a routine compliance review.
 
 ---
 
 ## The Narrative Core the Content Specialist Must Know
 
-**The key insight:** Most companies can list what annoys them about their tools. Few can quantify it rigorously enough to make a build-vs-buy decision. The article bridges this gap.
+**The surprising finding:** 85% of the financial impact comes from opportunity costs, not from time wasted on workarounds. The headline number (150,648 PLN/yr) is not primarily about lost productivity — it is primarily about decisions made on bad data.
 
-**The "adapted-around problems" insight:** Users stop noticing certain pain because workarounds become automatic. A simple "what's broken?" question misses this entirely. The CIT and JTBD methods are specifically designed to surface these invisible frictions. This is the article's main narrative value-add — not just presenting a methodology, but explaining *why* the methodology is necessary rather than just asking people what hurts.
+**The article's structure per user brief:**
+1. 7 clusters at a glance (table overview)
+2. Top 3 deep dives — most relatable and impactful: **Cluster 1** (bad data, biggest cost), **Cluster 5** (interview feedback loss, universally relatable), **Cluster 4** (competency tracking, specific to engineering hiring). Writer may choose Cluster 6 (scheduling) as an alternative for Cluster 4 if more universal appeal is preferred.
+3. The meta-pattern — these are structural limitations, not bugs
+4. Transferable lesson for readers' own tools
+5. Closing setup for Part 6 (does the cost justify building?)
 
-**What this approach revealed that "just asking" wouldn't:**
-- The time-to-hire discrepancy: Recruitee showed 23 days; real number was 31. No one had complained about it because everyone assumed the tool was right and stopped questioning it.
-- Problems people had normalized as "just how hiring works" turned out to be tool-specific and fixable.
-
-**The solvability filter is crucial:** The most common failure mode is blaming the tool for process problems. The three-question filter (software or process? could a different SaaS solve this? requires data ownership?) prevents the analysis from becoming a post-hoc justification.
-
-**The cost estimation split (Column A vs. Column B) is the intellectual honesty requirement:** Direct costs rarely justify the build on their own. But presenting only the full opportunity-cost-inclusive number is misleading. The honest split table forces the decision-maker to name the attribution assumption they're accepting — not a black box number.
+**Tone requirements:**
+- Positive campaign — no snark about Recruitee. "Designed for millions of users" is the explanation.
+- Show vulnerability — some of these should have been addressed sooner
+- Authentic and detailed — real data, nothing hidden
+- Audience: Tier 1 CTOs + Tier 3 engineers who love detailed breakdowns
 
 ---
 
 ## Full Research File
 
-All details, worksheets, and methodology content:
+All cluster details, individual pain points, meta-pattern analysis:
 `/Users/Blazej/Code/content-team/researcher/research.md`
 
 ---
-**Status:** Research complete — 5 primary sources, full methodology from internal brief incorporated
+**Status:** Research complete — all data Appunite internal, verified. No external sources needed for this article beyond Pendo 2019 for context.

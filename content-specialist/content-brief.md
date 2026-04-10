@@ -1,11 +1,11 @@
-# Content Brief: How to Discover What's Actually Broken in Your SaaS Tool
+# Content Brief: "24 Problems, 7 Clusters — What We Found Wrong with Our ATS"
 
 **Prepared by:** Content Specialist
-**Date:** 2026-03-19
+**Date:** 2026-03-30
 **For:** Content Writer
-**Series:** The SaaS Tax — Part 4
+**Series:** The SaaS Tax — Part 5
 **Author byline:** Błażej Cepil (first person — "we" for Appunite decisions, "I" for authorial judgment)
-**Content type:** Blog post — methodology delivery
+**Content type:** Blog post — analytical breakdown
 **Estimated length:** 2,000–2,500 words
 
 ---
@@ -14,15 +14,14 @@
 
 | Dimension | Value |
 |---|---|
-| Title | How to Discover What's Actually Broken in Your SaaS Tool |
-| Series | The SaaS Tax — Part 4 |
-| Journey Stage | Edukacja (Education) |
-| Primary Audience | Tier 1 CTOs / Heads of Engineering who want to replicate Appunite's methodology |
-| Goal | Teach the methodology. Position Appunite as people who ask the right questions. |
-| Tone | Enthusiastic, educational. Sage archetype. Practical and replicable. |
+| Title | 24 Problems, 7 Clusters — What We Found Wrong with Our ATS |
+| Series | The SaaS Tax — Part 5 |
 | Author | Błażej Cepil |
-| SEO Targets | "SaaS audit methodology", "software pain point discovery", "build vs buy requirements" |
-| Estimated Length | 2,000–2,500 words |
+| Primary Audience | Tier 1 CTOs + Tier 3 engineers who love detailed breakdowns |
+| Goal | Show depth of analysis. Make readers think "my tool has these same problems." |
+| Tone | Authentic, detailed, transparent. Real data without being boring. |
+| SEO Targets | "ATS problems", "Recruitee limitations", "recruitment software issues" |
+| Target Length | 2,000–2,500 words |
 
 ---
 
@@ -35,57 +34,58 @@
 | #1 | "The SaaS Tax — You're Paying for 100%, Using 12%" | Published |
 | #2 | "Hold My Beer — We're Building Our Own ATS (The Manifesto)" | Published |
 | #3 | "Why We Chose ATS as Our First Custom Replacement" | Published |
-| **#4** | **"How to Discover What's Actually Broken in Your SaaS Tool"** | **This article** |
-| #5 | Full pain point breakdown (all 7 clusters with costs) | Upcoming |
+| #4 | "How to Discover What's Actually Broken in Your SaaS Tool" | Published |
+| **#5** | **"24 Problems, 7 Clusters — What We Found Wrong with Our ATS"** | **This article** |
+| #6 | Does the cost justify building? The ROI decision. | Upcoming |
 
-### What the reader knows
+### What the reader knows coming in
 
-By Part 4, the reader knows: the SaaS tax is real (Part 1), Appunite decided to build their own ATS and found 24 problems costing 150,648 PLN/year (Part 2), and they chose ATS as the first replacement using a four-question scoring framework (Part 3). What they do not know yet is *how* the 24 problems were actually discovered. They are now asking: "How did you actually find all of this? Could I do the same thing for my stack?"
+By Part 5, the reader knows: the SaaS tax is real (Part 1), Appunite decided to build their own ATS and found 24 problems costing 150,648 PLN/year (Part 2), they chose ATS as the first replacement (Part 3), and Part 4 walked through the exact methodology used to discover those problems. What they have not yet seen is the full breakdown of all 24 problems across all 7 clusters — what each one looks like in practice, what it costs, and why no generic tool can solve it.
 
-This article answers that question end-to-end with a replicable methodology.
+Part 5 is the evidence post. It delivers what Part 2 promised and what Part 4's methodology produced.
 
 ### Core argument
 
-Most companies can list what annoys them about their tools. Few can quantify it rigorously enough to make a build-vs-buy decision. Here is the structured approach Appunite used to go from "Recruitee is frustrating" to "here are 24 specific problems costing us 150,648 PLN per year."
+When a tool designed for the median case meets a company with a non-median process, the result is not bugs — it is structural limitations that feel invisible until you measure them. These 24 problems are not evidence that Recruitee is bad. They are evidence of what happens when a specific, mature process outgrows a tool designed for the average case.
 
-### What makes this article different from the series so far
+### What makes this article different
 
-- Part 2 was announcement energy — declaring a bet, presenting the financial case
-- Part 3 was analytical/framework — the decision tool for choosing what to replace first
-- **Part 4 is educational/methodological** — enthusiastic and practical, "here's exactly how we did it, and here's how you can do it too"
+- Part 2 was the manifesto — the big bet, the headline number
+- Part 4 was the methodology — how to find problems rigorously
+- **Part 5 is the evidence** — here is everything we found, with full detail and honesty
 
-The writer must internalize this shift. Part 4 has a different texture: it is designed to be *used*, not just read. Worksheets and tables belong here.
+The texture of Part 5 is analytical and transparent. It rewards readers who want the details. It does not summarize — it shows.
 
 ---
 
 ## 3. Audience
 
-### Primary: Tier 1 — CTOs / Heads of Engineering
+### Primary: Tier 1 — CTOs / Engineering Leaders
 
-They have read Parts 1–3. They found the numbers in Part 2 convincing but want to generate equivalent numbers for their own stack. They are not looking for inspiration — they are looking for a process they can run with their team next week.
+They want to see whether Appunite's process is rigorous enough to trust. A headline number (150,648 PLN/yr) is easy to manufacture. Walking through 7 clusters with specific, verifiable problems is not. They are evaluating: is this real analysis or is this post-hoc justification? Every data point, every honest admission, every flagged assumption answers that question.
 
-**What hooks them:** Concrete methodology with templates they can use immediately. The revelation that structured discovery finds problems you would never find by just asking people.
+**What hooks them:** The composition of the cost (85% opportunity, not direct time loss), the specific discrepancies that were embedded for months, the structural explanation for why no configuration change can fix these problems.
 
-### Secondary: Tier 2 — Amplifiers
+### Secondary: Tier 3 — Engineers Who Love Breakdowns
 
-Engineering leaders who share "this is how we run rigorous discovery" content. The methodology needs to stand alone as useful regardless of the Appunite/Recruitee specifics.
+They are not decision-makers but they are amplifiers. They will share this because it validates something they already suspected about their own tools: the workarounds have become invisible. They want to see the specific problems, not just the clusters.
 
 ---
 
 ## 4. Tone
 
-**Archetype:** Sage. A senior practitioner sharing exactly how they did something, with enough detail to replicate it.
+**Archetype:** Transparent practitioner. Someone who ran a rigorous analysis and is sharing exactly what was found — including the parts that reflect poorly on their own habits.
 
-**Register:** Enthusiastic and practical. This is the "show your work" article — Błażej has genuine enthusiasm for the methodology and it should come through. Not evangelism, not cheerleading — the enthusiasm of someone who found a method that actually works.
+**Register:** Analytical but human. The enthusiasm here comes from the data being genuinely interesting, not from adjectives. The vulnerability comes from named admissions, not from general self-deprecation.
 
 **First person conventions:**
-- "we" = Appunite's decisions, actions, findings ("we ran the workshop", "we found 24 problems")
-- "I" = Błażej's authorial judgment ("I think the solvability filter is the most underrated step", "In my experience...")
-- Never "Appunite believes" or "the company decided"
+- "we" = Appunite's decisions, findings, habits ("we were using the wrong number")
+- "I" = Błażej's authorial judgment ("I think the attribution is reasonable, but it cannot be proven")
+- Never "Appunite believes" or "the company found"
 
-**Rhythm:** Vary sentence length. Short for declarative points. Longer for reasoning. Some paragraphs are one sentence. Don't write in uniform paragraph sizes.
+**Rhythm:** This article has a table-heavy structure in Section 1 and deep narrative in Section 2. The rhythm should reflect that: functional and direct around tables, more expansive in the day-to-day descriptions of what each problem actually looks like.
 
-**Formatting:** This article is designed to be used, so worksheets and tables are appropriate here — more so than in other parts of the series. But use headers only for genuine navigation, not for decoration. Prose for explanatory passages; structured formats only where the content demands structure.
+**Positive campaign requirement (critical):** The article must never read as a Recruitee teardown. "Designed for millions of users" is the explanation for every limitation — not an accusation and not an excuse. A reader who currently uses Recruitee should finish this article thinking "they're right, we're probably a different kind of user" — not "Appunite is attacking the product I chose."
 
 ---
 
@@ -93,327 +93,339 @@ Engineering leaders who share "this is how we run rigorous discovery" content. T
 
 ---
 
-### TL;DR / Opening (50–75 words)
+### Opening / TL;DR (50–75 words)
 
 **Format:** TL;DR block at the top, per series convention.
 
-**Content:** Most companies can tell you what annoys them about their tools. Few can quantify it rigorously enough to support a build-vs-buy decision. This post walks through the exact methodology Appunite used to go from "Recruitee is frustrating" to 24 specific problems costing an estimated 150,648 PLN per year — and how to run the same process yourself.
+**Content:** The discovery methodology from Part 4 produced 24 specific problems across 7 clusters, with a total estimated cost of 150,648 PLN per year — 85% of which is opportunity cost. This post walks through all 7 clusters: what each problem looks like in practice, why Recruitee cannot solve it structurally, and what the financial breakdown behind each cluster means.
 
-**The TL;DR must be extractable as a standalone summary.** An AI quoting it verbatim should produce a coherent result.
-
----
-
-### Section 1: Why "what's broken?" is the wrong first question (~250–300 words)
-
-**Purpose:** Establish WHY methodology is necessary — not just introduce the methods. This is the section's entire job.
-
-**Opening:** Do not open with a definition of discovery methods or a generic statement about tools. Start from the reader's experience: they already know something is off with their SaaS tool. The question is whether they are looking for it in the right way.
-
-**Required content for this section:**
-
-**The complaint-list problem.** When you ask people "what's broken?", you get a list of recent frustrations. What you do not get are the problems they have adapted around — the workarounds that have become so automatic that users no longer experience them as problems. The pain is real. The signal is invisible.
-
-**The JTBD reframe.** Jobs to Be Done reframes the question: not "what is broken in this tool?" but "what are you trying to accomplish at this step?" This surfaces the underlying job — the outcome the user actually needs — rather than opinions about the current tool's implementation. The distinction matters because users who have workarounds for problems no longer report those problems, even in direct interviews. The job remains unfulfilled; the user just stopped asking.
-
-Reference JTBD as a widely-used product discovery framework (popularized by Clayton Christensen and Tony Ulwick / Strategyn). Do not adjudicate between the Christensen and Ulwick variants. One sentence of attribution is sufficient.
-
-**Source to cite:** Product School JTBD Guide: https://productschool.com/blog/product-fundamentals/jtbd-framework
-
-**The CIT insight.** Critical Incident Technique (developed by John C. Flanagan, 1954) collects specific memorable incidents rather than general impressions. The key insight: one user reporting a critical incident may reveal something more important than the same low-stakes problem reported by ten. High-impact incidents matter more than frequently-reported ones. This is the mechanism behind finding adapted-around problems — asking "tell me about a specific time this tool failed you at a critical moment" breaks the workaround habit.
-
-**Source to cite:** Nielsen Norman Group on CIT: https://www.nngroup.com/articles/critical-incident-technique/
-
-**Closing the section:** These two reframes — JTBD for what to ask, CIT for how to ask it — are what separate a structured methodology from a complaint session. The next section is the methodology.
-
-**What NOT to do here:** Do not preview all four methodology steps. That is Section 2's job. Section 1 earns the reader's buy-in for why methodology is necessary — that's all.
+The TL;DR must be extractable as a standalone summary.
 
 ---
 
-### Section 2: The methodology (~700–900 words)
+### Section 1: The 7 Clusters at a Glance
 
-**Purpose:** Deliver the complete, replicable discovery methodology across four parts. This is the article's primary content. The writer should approach this as writing something a team lead could hand to a colleague and say "run this."
+**Word count target:** 250–350 words (not counting the table itself)
 
-**Important format note:** Include the worksheet tables and template structures exactly as specified below. Do not summarize them in prose instead. The article is designed to be used, and users need the actual templates.
+**Purpose:** Orient the reader with the full picture before the deep dives. The table is the anchor for the entire article — it lets the reader see all 7 clusters and return to it as a reference. The prose around it explains what they are about to read without over-explaining.
+
+**The complete cluster overview table — include exactly as formatted below:**
+
+| # | Cluster | Problems | Direct cost (PLN/yr) | Opportunity cost (PLN/yr) | Total (PLN/yr) | Cost type |
+|---|---|---|---|---|---|---|
+| 1 | Reports calculate with errors | 4 | 1,728 | 99,792 | 101,520 | Mixed (dominant: opportunity) |
+| 2 | Metrics not customisable | 3 | 2,304 | — | 2,304 | Direct only |
+| 3 | Funnels not elastic | 3 | 780 | 4,320 | 5,100 | Mixed |
+| 4 | No competency matrices + sourcing inefficiency | 4 | 6,036 | 4,056 | 10,092 | Mixed |
+| 5 | No interview transcription + manual feedback | 3 | 4,680 | 19,956 | 24,636 | Mixed (dominant: opportunity) |
+| 6 | Calendar/scheduling gaps | 3 | 3,888 | — | 3,888 | Direct only |
+| 7 | GDPR compliance gaps | 3 | 3,108 | — | 3,108 | Direct only |
+| **Total** | | **24** | **22,524** | **128,124** | **150,648** | |
+
+**Writing instructions:**
+
+Before the table: 1–2 sentences that frame what the reader is about to see. The table covers 24 problems across 7 clusters with a total estimated annual cost of 150,648 PLN. Do not write a paragraph of preamble — the table can carry its own weight.
+
+After the table: 2–4 sentences that call out the two most important structural observations:
+1. Cluster 1 alone accounts for 101,520 PLN/yr — 67% of the total — despite containing only 4 of the 24 problems.
+2. 85% of the total (128,124 PLN/yr) is opportunity cost, not direct time loss. This changes how the numbers should be read.
+
+One sentence may note that the next section goes deeper into the three clusters that matter most, and why.
+
+**What NOT to write in this section:**
+- Do not open with a definition or a general statement about SaaS tools
+- Do not editorialize about what the table "reveals" — let the table do that
+- Do not explain how the methodology worked (that is Part 4's job)
+
+**Required data points:**
+- 150,648 PLN/yr total
+- 22,524 PLN/yr direct
+- 128,124 PLN/yr opportunity
+- 85% opportunity cost share
+- Cluster 1 = 101,520 PLN/yr = 67% of total
+
+**Cross-link to include:** Near the table, link to Part 2 (where this table first appeared in summary form) and Part 4 (which explains how the 24 problems were found). Natural anchor text examples: "the methodology behind these numbers" → Part 4 link; "first introduced in Part 2" → Part 2 link.
+
+**SEO note:** "ATS problems" fits naturally in the prose around the table — in a sentence like "the ATS problems we found fell into two cost categories."
 
 ---
 
-#### Part 1: Feature usage audit (~150–200 words)
+### Section 2: The Top 3 That Matter Most
 
-**Purpose of this step:** Establish what fraction of the platform you actually use before running pain point discovery. Makes abstract frustrations concrete ("we don't use half of it" becomes a ratio with a number attached).
+**Word count target:** 900–1,100 words (300–370 words per cluster deep-dive)
 
-**Process (present in numbered list):**
-1. Build the feature list — from vendor documentation, admin panel walkthrough, and daily user interviews. Expect 40–150 features depending on the tool. Be specific: not "reporting" but each distinct report type.
-2. Classify each feature on two axes: Usage frequency (Daily / Weekly / Monthly / Never) and Requirement level (Required / Nice to have / Not needed).
-3. Calculate usage ratio: Features used at least monthly ÷ Total features × 100
-4. Calculate required ratio: Features marked Required ÷ Total features × 100
+**Purpose:** Move from table to experience. For three clusters, give the reader a day-to-day picture of what the problem actually looks like, explain why the tool cannot solve it structurally, and anchor it with the financial breakdown.
 
-**Include this worksheet table:**
+**The three clusters to deep-dive — in this order:**
 
-| Feature | Usage Frequency | Requirement Level | Notes |
-|---|---|---|---|
-| [Feature name] | Daily / Weekly / Monthly / Never | Required / Nice to have / Not needed | [Optional context] |
+1. **Cluster 1 — Reports calculate with errors** (101,520 PLN/yr)
+2. **Cluster 5 — No interview transcription + manual feedback** (24,636 PLN/yr)
+3. **Cluster 4 — No competency matrices + sourcing inefficiency** (10,092 PLN/yr)
 
-**Interpretation to include:**
-- Required ratio above 20%: tool may be well-matched, or the team has built workflow around the tool's structure (both worth examining)
-- Required ratio under 15%: territory where a custom build covering that 15% could plausibly replace the full platform
+**Rationale for this selection (writer context — do not publish):**
+- Cluster 1 is non-negotiable: it is 67% of the cost and the location of the most important vulnerability admission in the article.
+- Cluster 5 is the most universally relatable — any company running structured interviews loses signal to memory-based note-taking.
+- Cluster 4 is specific to technical hiring and will connect with the CTOs and engineers who are this article's primary audience.
 
-**The common traps to name:**
-- Daily usage does not equal Required — some daily habits exist because the current tool forces workarounds
-- Do not mark Required just because the feature currently exists. The test: if v1 of a replacement didn't have this, would we be blocked?
+**Required structure for each cluster:**
 
-**Appunite's result to include:** Their Recruitee audit found approximately 10% of features actively used. Compare this to the Pendo 2019 finding that 12% of features drive 80% of daily usage across the industry — Appunite's number tracks closely with the pattern.
-
-**Source to cite for Pendo:** https://www.pendo.io/resources/the-2019-feature-adoption-report/ — note it as "still the largest study of feature adoption available; no newer study has superseded it." Cite year (2019) explicitly.
+Each cluster deep-dive must cover three things in roughly this order:
+1. What does this look like day-to-day? (concrete, specific, a scene if possible)
+2. Why can't the generic tool solve it? (the structural explanation — built for the median case, not this one)
+3. What does it cost? (the number, with direct/opportunity split shown)
 
 ---
 
-#### Part 2: Pain point discovery workshop (~200–250 words)
+#### Cluster 1 — Reports calculate with errors
 
-**Purpose of this step:** Structured elicitation of pain points using CIT and JTBD framing, with individual scoring before group discussion.
+**Day-to-day narrative:**
 
-**Workshop setup (include these specifics):**
-- Participants: 2–3 daily users from different workflow areas, someone who can speak to business impact, a decision-maker. Cap at 6 people. Do NOT invite the vendor relationship owner unless they are also a daily user.
-- Duration: 90 minutes. First 20 min: individual collection. Next 50 min: discussion, clarification, scoring. Final 20 min: solvability filter. Extend to 2 hours if energy is high.
-- Pre-work: Share the collection template at least 24 hours in advance (Appunite gave a week). Ask for at least 5 entries before the session. Pre-filled templates produce deeper outputs than blank ones filled in during the session.
+The tool reports time-to-hire as 23 days. Manual tracking shows the real number is 31. The difference is not a rounding error — Recruitee counts calendar days from job posting, not from the stage transitions that reflect actual pipeline movement. The two numbers measure different things.
 
-**Include this pain point collection template:**
+The honest part: this discrepancy had been there for months before the audit. Every planning meeting, every hiring retrospective, every headcount discussion was built on the wrong number. Not because nobody cared about accuracy — because questioning the tool's output at that level had stopped being a habit. The expectation of accuracy had been abandoned so gradually that nobody could locate the moment it happened. Name this directly. It is the key vulnerability admission of the article.
 
-| Field | Definition |
+**Four specific problems the writer must reference:**
+1. Time-to-hire calculation logic counts from job posting, not from first candidate interaction or actual stage transitions — does not match how Appunite's real pipeline moves
+2. Hire count metric shows 0% regardless of completed hires — not a data lag, a metric that is visibly broken with no workaround other than ignoring it
+3. Cost-per-hire requires combining Recruitee data with payroll data the tool cannot access — no native path; team either skips the metric or exports and calculates manually
+4. Data refresh lag — reports do not update in real time; morning pipeline data does not reflect previous evening's activity during active hiring periods
+
+**Why the generic tool can't fix it:**
+The calculation logic is hardcoded. "Time-to-hire" means one thing in Recruitee's codebase and another in Appunite's actual process. A tool built for the median SMB defines hiring stages in a standard way because that definition works for most of its customers. Appunite is not most customers. There is no configuration option that changes the underlying calculation logic — this is not a settings problem.
+
+**Cost:**
+- Total: 101,520 PLN/yr
+- Direct: 1,728 PLN/yr (time manually cross-checking and correcting reports)
+- Opportunity: 99,792 PLN/yr
+
+The writer must flag the attribution assumption here, explicitly and honestly: the opportunity cost rests on the assumption that 50% of failed hires trace back to decisions made on inaccurate reporting data. At 0% attribution, the ROI on the entire build project goes from +75% to -74%. This is the most consequential single number in the cost model. It cannot be proven. It can be argued — and Appunite believes the argument is reasonable. But the assumption must be named.
+
+---
+
+#### Cluster 5 — No interview transcription + manual feedback
+
+**Day-to-day narrative:**
+
+The interview ends. The interviewer goes back to their desk. Somewhere between two hours and the following morning, they write their notes from memory. The feedback form in Recruitee is an open text field. No template, no scoring rubric, no standard questions to respond to. One interviewer writes three sentences. Another writes three paragraphs in a format nobody else uses. When the team meets to decide between two finalists, they are comparing things that cannot be compared.
+
+**Three specific problems the writer must reference:**
+1. No recording or transcription — after the interview is done, what was said exists only in the interviewer's memory; signal loss is structural, not occasional
+2. Freeform feedback only — no template, no rubric, no scoring dimensions; each interviewer invents their own format, making candidate-to-candidate comparison close to impossible
+3. No side-by-side candidate comparison — when making a final decision between two candidates, there is no structured view; decision-makers work from fragmented notes across separate pages
+
+**Why the generic tool can't fix it:**
+Recruitee's feedback model was designed for the use case where notes are sufficient — generalist roles, standard interview formats, low technical depth. For a company evaluating senior Elixir engineers on architecture decisions, communication quality in client-facing contexts, and system design thinking, an open text field is not a data structure. No amount of configuring Recruitee's existing fields produces structured, comparable, searchable interview data.
+
+**Cost:**
+- Total: 24,636 PLN/yr
+- Direct: 4,680 PLN/yr (estimated 20–30 min per interview for post-interview writeups × interview volume × hourly rate)
+- Opportunity: 19,956 PLN/yr (conservative estimate of lost signal leading to worse offer acceptance rates and early attrition outcomes)
+
+---
+
+#### Cluster 4 — No competency matrices + sourcing inefficiency
+
+**Day-to-day narrative:**
+
+A new Elixir role opens. The team remembers that six months ago they interviewed someone who was strong — the timing was wrong, headcount was not approved. That candidate exists somewhere in Recruitee. Their interview notes exist. But there is no way to search for "candidates with strong Elixir scores, passed over for non-performance reasons." The data is in a text field. It is not queryable. The recruiter starts from zero: same job boards, same outreach, same channels.
+
+**Four specific problems the writer must reference:**
+1. No competency scoring — no structured field, no rubric, no aggregate view across interviewers; only free-text notes that cannot be systematically compared
+2. Past candidates not surfaced for new roles — data exists in the system but is not searchable by skill profile; every new role effectively resets the candidate pipeline
+3. Sourcing is role-level, not competency-level — job postings go to the same channels regardless of specific skill requirements; no way to target outreach to candidates with documented profiles from prior interactions
+4. Technical assessment results from external tools cannot be attached to the candidate record in a structured way — results live in email threads or separate spreadsheets, disconnected from the candidate's history in Recruitee
+
+**Why the generic tool can't fix it:**
+Recruitee was designed for companies hiring generalists at moderate volume, where the talent pool is large and each candidate interaction is relatively self-contained. Appunite's situation is different: senior Elixir engineers are a small community, and the relationship with a candidate who was good-but-wrong-timing has potential value months or years later. The tool's data model was never built to support longitudinal candidate relationships because most of its customers do not need that.
+
+**Cost:**
+- Total: 10,092 PLN/yr
+- Direct: 6,036 PLN/yr (recruiter time on manual sourcing steps that a competency-indexed system would reduce)
+- Opportunity: 4,056 PLN/yr (cost of re-sourcing from scratch vs. surfacing known, pre-qualified candidates)
+
+---
+
+**Transition between clusters:**
+
+Each cluster should open with a scene or a specific observation — not with a category label. Sub-headers using the cluster name are fine for navigation. The opening sentence of each deep-dive should pull the reader into the problem rather than describe it from outside.
+
+**SEO note:** "Recruitee limitations" fits naturally in one of the cluster sections when explaining why the tool cannot solve the problem structurally. Frame it as design boundaries, not product failures: "These are not Recruitee limitations in the sense of defects — they are boundaries of what the product was built to do."
+
+---
+
+### Section 3: The Pattern Across All 7
+
+**Word count target:** 300–400 words
+
+**Purpose:** Step back from the individual clusters and name the structural explanation that applies to all of them. This is the analytical reward for a reader who has followed the detail. It is also the section that protects the article from reading as a product criticism.
+
+**The meta-pattern the writer must convey:**
+
+These are not bugs. Recruitee works correctly for its target market. The structural limitations exist because the product was built for the median case: SMBs with moderate hiring volumes, generalist roles, standard funnel structures, and standard reporting needs. That product is well-designed for that use case.
+
+Appunite is not that use case:
+- **Low volume, high quality bar** — the tool is optimized for throughput; Appunite needs depth of evaluation at each step
+- **Narrow talent pool** — senior Elixir engineers are a small community; relationship tracking over time matters in a way it does not for a company hiring generalists at volume
+- **Complex technical evaluation** — a standard notes field cannot hold what a structured competency matrix needs to capture
+- **Strategic data ownership** — Appunite needs to cross-reference hiring outcomes with actual engineer performance post-hire; this requires owning the data model, not renting access to it
+
+This is not a product-quality problem. It is a product-market fit problem. A tool built for one market applied to a different market. The structural limitations serve the majority of Recruitee's users. They just do not serve Appunite.
+
+**Vulnerability element required in this section:**
+
+This section is also where the second honest admission belongs. Several of the workarounds discovered in the audit had become so embedded that team members no longer experienced them as problems — they were just "how hiring works." Manual calendar coordination. Memory-based interview feedback. The audit revealed how much normalized friction had accumulated. The team was not oblivious — the friction had simply become invisible, one small adaptation at a time.
+
+Name this without dramatizing it. The tone is: this is a real thing that happens to tools used long enough, and it happened to us.
+
+**What NOT to write here:**
+- Do not write a generic paragraph about SaaS industry trends or "in today's market"
+- Do not imply Recruitee made poor design choices — the framing throughout is that they built the right product for their target customer
+- Do not use "landscape," "pivot," or any other banned words
+
+---
+
+### Section 4: What This Means for Your Tools
+
+**Word count target:** 250–350 words
+
+**Purpose:** Make the article useful beyond Appunite's specific situation. Give readers a transferable lens for their own SaaS stack.
+
+**The transferable lesson framing:**
+
+This article is not a Recruitee review. It is a case study in what happens when a mature, specific process meets a generic tool. The reader's tool may not be an ATS. The patterns are the same.
+
+**Three questions to surface for the reader** (not necessarily as a bulleted list — integrate naturally into prose if that reads better):
+
+1. Are there metrics in your tool you cannot customize — where the vendor's definition of "conversion rate," "time-to-hire," or "utilization" does not match what your process actually needs to measure?
+2. Are there workflows you cannot modify — where the tool's fixed structure forces your process to conform to its logic rather than the other way around?
+3. Is there data in your tool you cannot cross-reference — where the information exists inside the system but cannot be queried in the way your decisions require?
+
+**Tone note:** Write this as a genuine observation from someone who just ran this exercise — not as a "key takeaways" slide, not as a lecture. The reader is being given a lens, not instructions.
+
+**SEO note:** "recruitment software issues" fits most naturally here, when framing the parallel to the reader's own tools. Example: "The recruitment software issues we found aren't unique to Recruitee or to hiring — they are a specific version of a general problem."
+
+---
+
+### Section 5: Closing Note — The Question This Raised
+
+**Word count target:** 150–200 words
+
+**Purpose:** Close the article at the right moment. Set up Part 6 without summarizing it or teasing it. The discovery is complete. Now the question is what to do with it.
+
+**What to convey:**
+
+- The process was rigorous. The data is as honest as it can be given the constraints (especially the attribution assumption in Cluster 1).
+- The numbers raise a question this article cannot answer: does 150,648 PLN/yr in estimated cost actually justify an 86,000 PLN build?
+- The answer is not obvious. Direct savings alone (22,524 PLN/yr) produce a negative ROI on an 86,000 PLN build. The case only works if a meaningful fraction of the opportunity costs are real.
+- That question — whether the assumptions hold — is what Part 6 addresses.
+
+**What NOT to write:**
+- Do not say "stay tuned" or "next time" or "coming soon"
+- Do not write a cliffhanger
+- Do not answer the question. The door opens; that is all.
+- Do not introduce any data about the build itself — that belongs in Part 6
+
+**Suggested closing structure:** End with a sentence or two that names the genuine uncertainty and points at it honestly. The financial case is stronger with opportunity costs included. But opportunity costs rest on assumptions. Part 6 is about whether those assumptions hold. No title, no URL for Part 6 — forward reference only.
+
+---
+
+## 6. All Data Points the Writer Must Include
+
+All figures are Appunite internal, verified. Use exactly as cited.
+
+| Fact | Placement |
 |---|---|
-| Description | Specific and concrete. Not "reporting doesn't work well" but "hire count always shows 0% regardless of actual hires" |
-| Frequency | Daily / Weekly / Monthly / Quarterly |
-| Severity | 1–5 anchored to business consequence (see scale below) |
-| Current workaround | What the team does today. "Nothing, we just live with it" is a valid answer. |
-| Time per occurrence | Minutes per workaround. Estimate conservatively — used in cost calculation. |
+| 150,648 PLN/yr total cost | Section 1 (table), Section 1 (prose), closing |
+| 22,524 PLN/yr direct cost | Section 1 (table), closing |
+| 128,124 PLN/yr opportunity cost | Section 1 (table) |
+| 85% of total is opportunity cost | Section 1 (prose after table), Section 3 or closing |
+| Cluster 1 = 101,520 PLN/yr = 67% of total | Section 1 (prose after table), Cluster 1 deep-dive |
+| 1,728 PLN/yr direct cost for Cluster 1 | Cluster 1 deep-dive |
+| 99,792 PLN/yr opportunity cost for Cluster 1 | Cluster 1 deep-dive |
+| 50% attribution assumption drives Cluster 1 opportunity cost | Cluster 1 deep-dive — must be flagged as assumption |
+| Build budget: 86,000 PLN | Section 5 closing |
+| Direct-only ROI: -74% | Section 5 closing |
+| Full ROI (with opportunity): +75% | Section 5 closing |
+| 23 days (Recruitee reported) vs. 31 days (actual) time-to-hire | Cluster 1 deep-dive |
+| Discrepancy had been there for months before audit | Cluster 1 deep-dive (vulnerability admission) |
+| Cluster 5 = 24,636 PLN/yr total | Cluster 5 deep-dive |
+| 4,680 PLN/yr direct cost for Cluster 5 | Cluster 5 deep-dive |
+| 19,956 PLN/yr opportunity cost for Cluster 5 | Cluster 5 deep-dive |
+| Cluster 4 = 10,092 PLN/yr total | Cluster 4 deep-dive |
+| 6,036 PLN/yr direct cost for Cluster 4 | Cluster 4 deep-dive |
+| 4,056 PLN/yr opportunity cost for Cluster 4 | Cluster 4 deep-dive |
+| 24 distinct problems, 7 clusters | Section 1, Section 3 |
+| Several workarounds had become invisible before audit | Section 3 (vulnerability element) |
 
-**Include this severity scale:**
-
-| Score | Definition |
-|---|---|
-| 1 | Annoying, no workaround needed |
-| 2 | Workaround exists, under 5 min, reliable |
-| 3 | Workaround exists but time-consuming or introduces data risk |
-| 4 | No clean workaround; data quality suffers or significant recurring manual work |
-| 5 | Blocking: task cannot be completed, compliance risk, or downstream failures |
-
-**Calibration note to include:** A workaround that takes 10 minutes and is done = 3. A workaround that introduces data you will need to reconcile later = 4. A 5 is reserved for genuine blocks, not inconveniences.
-
-**Source to cite for the Impact × Frequency matrix approach:** GLIDR: https://help.glidr.io/en/articles/2826779-pain-vs-frequency-scores — individual scoring before group discussion prevents anchoring bias. When scores diverge by 2+ points, discuss the evidence — the goal is calibration, not consensus.
-
----
-
-#### Part 3: Clustering methodology (~150–200 words)
-
-**Purpose of this step:** Group individual pain points by root cause, not symptom. The cost and solvability of a cluster — not an individual pain point — is what drives the build decision.
-
-**How to cluster (include in numbered list):**
-1. Group by feature area — the part of the tool where the problem lives
-2. For each group, write a single sentence naming the cluster by its business consequence
-
-**Sentence structure to include (format as a callout or distinct block):**
-> [Feature area] does not [capability], which prevents us from [business outcome] / results in [business consequence].
-
-**Appunite examples to include (all three):**
-- *Reports are not elastic and calculate with errors, preventing us from seeing accurate time-to-hire and cost-per-hire metrics.*
-- *Funnels are not editable after the fact, resulting in data corruption and unreliable pipeline metrics.*
-- *It is not possible to design competency matrices, preventing us from systematically screening past candidates for new roles.*
-
-**What a good cluster looks like:** 3–8 individual pain points, single dominant feature area, business consequence articulable in one sentence. If 15 pain points land under one cluster, it is probably two clusters. If you cannot state the business consequence in one sentence, the cluster is not ready for cost estimation.
-
-**Appunite result:** 24 individual problems → 7 clusters. The ratio of roughly 3–4 pain points per cluster is typical for a tool that has been in use for a year or more.
+**Do not invent statistics.** If a claim needs a number not in this list, write from Appunite's direct experience or cut the claim.
 
 ---
 
-#### Part 4: The solvability filter (~150–200 words)
-
-**Purpose of this step:** The most common failure mode is blaming the tool for problems that are actually process problems. The solvability filter is the intellectual honesty requirement. Do not minimize it.
-
-**Why this matters (include this framing):** Without a solvability filter, pain point analysis becomes post-hoc justification. Teams find 24 problems, assume they all require new software, build the tool, and six months later three of those problems still exist — because the root cause was never the software. The filter is what separates a rigorous assessment from wishful thinking.
-
-**Include all three questions with their tests:**
-
-**Q1: Is this a software problem or a process problem?**
-Test: If we had unlimited configuration in the current tool, would this problem still exist? Yes → process problem. Building new software will not fix it.
-
-**Q2: Could a different SaaS solve this?**
-Switching SaaS is almost always cheaper and faster than building. The bar for building: no existing product solves this adequately, or the switching cost across all pain points exceeds the build cost. If a different SaaS solves 2 of 7 clusters, factor that in before deciding to build.
-
-**Q3: Does solving this require data ownership or custom logic no SaaS can provide?**
-This is where building typically wins. If the pain requires querying data in ways the vendor does not expose, building workflows that do not exist in any available tool, or maintaining context outside any vendor's data model — custom software has a structural advantage that switching cannot address.
-
-**Appunite's answer to Q3 to include:** The ability to track candidate relationships over time, surface past candidates for new roles based on competency data, and own the full history of every interaction. No ATS evaluated offered this as a native feature.
-
----
-
-### Section 3: How we clustered 24 problems into 7 themes (~250–300 words)
-
-**Purpose:** Show Appunite's actual output from the clustering step. Make the methodology concrete by showing what it produced. Illustrate how seemingly different complaints connect to the same root cause.
-
-**Key points to make:**
-- The categorization logic: 24 problems did not feel like 24 separate things once clustering was done. Most problems traced back to 7 root failures in the tool.
-- The ratio of roughly 3–4 pain points per cluster is typical for a tool in use for a year or more — by that point, users have found most of the friction, even if they have normalized it.
-- Individual complaints that seemed unrelated often shared a single root cause once the cluster sentence was written.
-
-**Include the 7 cluster names with their business consequence sentences (these come from the research, include them all):**
-
-| # | Cluster | Business consequence |
-|---|---|---|
-| 1 | Reports calculate with errors | Reports are not elastic and calculate with errors, preventing us from seeing accurate time-to-hire and cost-per-hire metrics. |
-| 2 | Metrics not customisable | Metrics cannot be configured to match our actual process, limiting pipeline visibility to whatever the vendor decided to surface. |
-| 3 | Funnels not elastic | Funnels are not editable after the fact, resulting in data corruption and unreliable pipeline metrics. |
-| 4 | No competency matrices + sourcing inefficiency | It is not possible to design competency matrices, preventing us from systematically screening past candidates for new roles. |
-| 5 | No interview transcription + manual feedback | There is no structured way to capture or review interview content, meaning hiring signal is lost and each evaluation cycle depends on memory rather than data. |
-| 6 | Calendar/scheduling gaps + workflow coordination | Scheduling and coordination require manual effort for every step, adding friction to each hiring cycle and increasing time-to-hire. |
-| 7 | GDPR compliance gaps + manual processing | GDPR-required actions cannot be automated, creating compliance risk and recurring manual processing that scales with hiring volume. |
-
-**Note to writer:** The cost breakdown by cluster (101,520 PLN for Cluster 1, etc.) is the full cost table from Part 2. Do NOT reproduce it here. Reference Part 2 for the detailed numbers. This section is about the clustering methodology and its output, not the financial model.
-
-Cross-link Part 2: https://appunite.com/blog/hold-my-beer-building-custom-ats
-
----
-
-### Section 4: What this approach revealed that "just asking" wouldn't (~250–300 words)
-
-**Purpose:** Demonstrate the value of structured methodology versus informal discovery. Make the "adapted-around problems" insight concrete using Appunite's specific examples.
-
-**Critical opening instruction:** Do NOT open this section with cost figures. Start with the narrative insight — the discovery of invisible problems. Bring in costs after the narrative is established.
-
-**The narrative to tell:**
-
-The most interesting finding was not the 24 problems. It was the problems that nobody had thought to report.
-
-**The 23-day / 31-day discrepancy is the key example — use it prominently.** Recruitee reported a time-to-hire of 23 days. The actual number was 31. No one had flagged this as a problem, because everyone assumed the tool was right and had stopped questioning it. This is the adapted-around problem in its purest form: the pain is real and measurable, the workaround is invisible (using whatever number the tool gives you), and no one registers it as a friction point because the expectation of accuracy was abandoned so gradually that the moment of abandonment is unlocatable.
-
-**Other examples to include:**
-- Problems people had normalized as "just how hiring works" turned out to be tool-specific and fixable. The JTBD framing — "what are you trying to accomplish here?" — surfaced these: when users described their actual goal rather than their experience of the current tool, the gap became visible.
-- The solvability filter caught one or two items that were process problems masquerading as tool problems. Without the filter, those would have been scoped into a build, built, and not fixed — because the root cause was never the software.
-
-**Then bring in the broader point:** Structured methodology finds these things because it creates the conditions for them to surface. Direct questions get direct answers. The JTBD and CIT methods are specifically designed to get around the human tendency to adapt and stop noticing.
-
-**You may mention the cost figures briefly here** (150,648 PLN total, 22,524 PLN direct) to connect the narrative to the numbers — but this section's job is the insight, not the financial breakdown. The full breakdown is in Part 2.
-
----
-
-### Section 5: How to do this yourself (~250–300 words)
-
-**Purpose:** Give the reader a practical starting point. Frame this as something any team lead can run in a week, without specialist UX knowledge.
-
-**Opening framing:** This methodology does not require a research background. It requires blocking time, preparing templates, and being rigorous about the solvability filter.
-
-**Include a practical checklist (numbered):**
-
-1. Pick one SaaS tool with documented friction — something your team complains about regularly, or that you suspect is mis-matched with your process.
-2. Build the feature list from the vendor's documentation and a 30-minute walkthrough. Aim for completeness; specificity matters more than speed.
-3. Run the feature audit with 2–3 daily users. Calculate your usage ratio and required ratio.
-4. Send the pain point collection template to workshop participants at least 24 hours in advance. Ask for 5+ entries before the session.
-5. Run the 90-minute workshop (or 2 hours if the group is engaged). Individual scoring first, group calibration second.
-6. Cluster the pain points by feature area. Write the business consequence sentence for each cluster before moving to cost estimation.
-7. Apply the solvability filter to every cluster. Do not skip this step.
-
-**Reference the Column A / Column B cost split from research.md Section E.** Include it as follows:
-
-When you move to cost estimation, keep two columns visibly separate:
-
-| | Column A: Direct costs only | Column B: Direct + opportunity |
-|---|---|---|
-| Annual cost of current pain | Time your team loses to workarounds | Direct costs + attributed opportunity costs |
-| Build budget | [your budget] | [same] |
-| ROI | (A − budget) ÷ budget | (B − budget) ÷ budget |
-| Payback period | Budget ÷ A savings | Budget ÷ B savings |
-| Break-even attribution | N/A | Minimum % of opportunity costs that must be real to justify the build |
-
-Column A is the defensible case. Column B is the ambitious case. If the build only works in Column B, name the attribution assumption that drives the gap — and design a 1–2 week sanity check before committing. (See Part 2 for how Appunite handled this: https://appunite.com/blog/hold-my-beer-building-custom-ats)
-
-**Forward reference to Part 5:** The next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number. If you want to see exactly how a specific cluster was costed, that post will have it.
-
-**Cross-link Part 1 somewhere in this section** to connect back to the series origin: https://appunite.com/blog/the-saas-tax
-
----
-
-## 6. Data Points the Writer Must Use
-
-All verified. Use exactly as cited.
-
-| Fact | Source | Placement |
-|---|---|---|
-| 80% of SaaS features are rarely or never used | Pendo 2019 Feature Adoption Report | Section 2, Part 1 (feature audit) |
-| 12% of features drive 80% of daily usage | Pendo 2019 Feature Adoption Report | Section 2, Part 1 |
-| Appunite's Recruitee assessment: ~10% of features actively used | Appunite internal | Section 2, Part 1 |
-| 24 distinct problems, 7 clusters | Appunite internal | Section 2 (Part 3 / clustering), Section 3, Section 4 |
-| Direct annual cost: 22,524 PLN/yr | Appunite internal | Section 4 (narrative reference), Section 5 |
-| Total annual cost including opportunity: 150,648 PLN/yr | Appunite internal | TL;DR, Section 4, Section 5 |
-| 85% of total cost is opportunity cost | Appunite internal | Section 4 (supporting the narrative) |
-| Single largest cluster: Cluster 1 (reporting errors) at 101,520 PLN/yr | Appunite internal | Section 3 (table) |
-| Build budget: 86,000 PLN | Appunite internal | Section 5 reference (do not re-run full financial model) |
-| Time-to-hire discrepancy: Recruitee showed 23 days, real was 31 | Appunite internal | Section 4 — this is the key concrete example |
-| CIT developed by John C. Flanagan (1954) | NN/G | Section 1 |
-| JTBD popularized by Clayton Christensen / Tony Ulwick (Strategyn) | Product School | Section 1 |
-| Individual scoring before group discussion prevents anchoring bias | GLIDR | Section 2, Part 2 |
-| When scores diverge by 2+ points, discuss evidence — goal is calibration, not consensus | GLIDR | Section 2, Part 2 |
-
-**Source URLs:**
-- Pendo Feature Adoption Report: https://www.pendo.io/resources/the-2019-feature-adoption-report/
-- NN/G — Critical Incident Technique: https://www.nngroup.com/articles/critical-incident-technique/
-- Product School — JTBD Framework: https://productschool.com/blog/product-fundamentals/jtbd-framework
-- GLIDR — Pain vs Frequency Scores: https://help.glidr.io/en/articles/2826779-pain-vs-frequency-scores
-
-**Do not invent statistics.** If a claim needs a number and none exists in this brief or the research file, write from Appunite's direct experience: "In our experience..." or "The teams we work with tell us..."
-
----
-
-## 7. Cross-Link Requirements (Non-Negotiable)
+## 7. Cross-Link Requirements
 
 | Link Target | URL | Required Placement |
 |---|---|---|
-| Part 1: The SaaS Tax | https://appunite.com/blog/the-saas-tax | Section 1 or Section 5 (natural reference to the series origin) |
-| Part 2: The Manifesto | https://appunite.com/blog/hold-my-beer-building-custom-ats | Section 3 (when referencing the cost table) and Section 5 (Column A/B reference) |
-| Part 3: Why We Chose ATS | https://appunite.com/blog/why-we-chose-ats-first | Intro or TL;DR as natural series reference |
-| Part 5: Full pain point breakdown | Forward reference only — no URL yet | Section 5 closing (what's next) |
+| Part 1: The SaaS Tax | https://appunite.com/blog/the-saas-tax | Optional — include if a natural anchor exists in Section 4 |
+| Part 2: The Manifesto | https://appunite.com/blog/hold-my-beer-building-custom-ats | Section 1, near the table ("this table first appeared in Part 2 in summary form") |
+| Part 4: Methodology | https://appunite.com/blog/how-to-discover-whats-broken-in-your-saas | Section 1, before the table ("the methodology that produced these 24 problems") |
+| Part 6: ROI decision | Forward reference only — no URL | Section 5 closing only |
 
 ---
 
 ## 8. What NOT to Do
 
-| Do NOT | Why | Do Instead |
-|---|---|---|
-| Open Section 4 with cost figures | This section's power is the narrative insight — adapted-around problems. Costs follow the story. Leading with numbers makes it feel like a press release, not discovery. | Start with the 23-day/31-day discrepancy story. Introduce costs after the narrative is established. |
-| Make this a "Recruitee is bad" article | Recruitee is a good product for its target market (general SMBs, 50–500 employees). Positioning this as a product tear-down makes Appunite look petty and undermines the methodology's credibility. | "Recruitee was built for a different market. Our process diverged from what any general-purpose ATS was designed to handle." |
-| Skip or abbreviate the solvability filter | The solvability filter is the intellectual honesty requirement. Without it, the methodology is just a list of complaints with numbers attached. Reviewers and skeptical CTOs will notice its absence. | Give it its full weight in Section 2, Part 4. All three questions. Appunite's Q3 answer. |
-| Present only the full opportunity-cost ROI number | 85% of the 150,648 PLN figure is opportunity cost driven by a single attribution assumption. Presenting the headline without the Column A/B split is misleading and will be caught by any financially literate reader. | Always pair the total with the direct-cost-only figure and the Column A/B split. |
-| Invent statistics or use vague sourcing | "Experts say," "industry reports show" are AI tells and weak writing per tone-of-voice.md. | Cite specific sources. Write from Appunite's direct experience where no source exists. |
-| Use the Pendo 2019 data without noting the year | The 2019 date is a potential credibility hit if not addressed. Acknowledge it is dated but still the largest study available. | "According to Pendo's 2019 Feature Adoption Report — still the largest study of its kind..." (model this after Part 1's exact handling) |
-| Reproduce the full cost table from Part 2 | The cost breakdown by cluster (with monthly/annual figures) lives in Part 2. Reproducing it here is redundant and breaks the article's focus on methodology. | Reference the table and link to Part 2. Use the 7-cluster summary table in Section 3 only. |
-| Over-explain JTBD or CIT | This audience is technically literate. One sentence of attribution per framework is sufficient. The article is not a literature review. | Name the framework, describe its application to this specific problem, cite one source, move on. |
-| Present Section 2 as purely prose | The methodology article is designed to be used. Worksheets and templates belong here — they are the point. | Include the feature audit worksheet, pain point collection template, severity scale, and cost split table as formatted tables. |
-| Use banned words from tone-of-voice.md | See Section 9 below | Check the full list before finalizing |
-| Start any sentence with "Additionally," | Per tone-of-voice.md — structural red flag | Restructure the sentence flow |
-| Use floating analytical clauses at sentence endings | "...underscoring our commitment," "...highlighting the importance of" — AI tells per tone-of-voice.md | If the point is worth making, give it its own sentence with actual content |
-| Use "not just X, but Y" constructions unless both sides are concrete | Hollow parallel constructions per tone-of-voice.md | If contrasting, make both sides specific |
-| Open with a definition or Wikipedia-style lead | "Pain point discovery is the process of..." is an AI tell | Start from the reader's situation or Appunite's specific context |
+1. **Do not editorialize about Recruitee's quality.** Any phrasing that implies Recruitee is poorly built, surprisingly limited, or badly designed is wrong. The framing throughout: it is the right product for its market. Appunite is not that market. A reader who chose Recruitee for a standard SMB hiring process should not feel attacked.
+
+2. **Do not hide the attribution assumption.** The 50% attribution for Cluster 1's opportunity cost must be named and flagged. Presenting 101,520 PLN/yr without noting that this figure depends on an unverifiable assumption would undermine the article's core promise of transparency. The entire ROI case rests on this number.
+
+3. **Do not write a generic SaaS criticism piece.** Every claim must be grounded in Appunite's specific data about their specific tool. The pattern in Section 3 is general; the evidence in Sections 1 and 2 is always specific.
+
+4. **Do not use present-participle analytical tails.** No sentences ending in "…highlighting the importance of data quality," "…underscoring the need for flexibility," "…reflecting the challenges of modern hiring." These sound like AI output and add nothing.
+
+5. **Do not let 150,648 PLN float free of its context.** Every appearance of the total cost figure should either include the direct/opportunity split or reference it from a recently established context. The headline number without its composition is misleading.
+
+6. **Do not open any section with a definition or a Wikipedia-style lead.** No "An ATS is…" No "Recruitment software is designed to…" The reader knows. Start with Appunite's situation or a specific observation.
+
+7. **Do not force three things everywhere.** The data has 7 clusters. The deep-dives cover 3. If a point is best made in two sentences, use two. Avoid packaging everything into artificially balanced structures.
+
+8. **Do not write the vulnerability admissions as confessions.** The tone for honest admissions is plain observation, not self-flagellation. "The discrepancy had been there for months" — not "we were embarrassed to discover" or "we must admit."
+
+9. **Do not resolve the Part 6 forward reference.** Section 5 opens the question of whether the build is justified. That question stays open. Do not hint at the answer.
+
+10. **Do not over-format.** Headers for navigation are fine. Bullet points for things that can be said in a sentence are not. Bold for genuinely critical numbers and terms only — not for decoration. The table in Section 1 is structural; do not add more tables in the deep-dive sections unless strictly necessary.
+
+11. **Do not write Section 4 as a "key takeaways" slide.** It should read as a genuine observation from someone who has just gone through this exercise, not as a listicle.
+
+12. **Do not compress the three deep-dives to save words.** The article's value proposition for this audience is specificity. Each deep-dive must cover all required individual problems for that cluster, the day-to-day narrative, the structural explanation, and the cost breakdown with split. Compressing any of these undermines the article's core goal: making readers think "my tool has these same problems."
 
 ---
 
-## 9. Banned Words and Phrases (from tone-of-voice.md)
+## 9. Banned Words List
+
+From Appunite tone-of-voice guidelines. Do not use any of the following.
 
 **Absolute bans:**
-delve, tapestry, vibrant, nestled, groundbreaking (figurative), rich (figurative), intricate, intricacies, interplay, cultivate / fostering (figurative), testament, indelible, enduring, pivotal (when avoidable), crucial (when avoidable), landscape (as abstract noun), underscore (as verb meaning "emphasize"), showcase (as verb), garner, resonate, align with
+delve, tapestry, vibrant, nestled, groundbreaking (figurative), rich (figurative), intricate, intricacies, interplay, cultivate / fostering (figurative), testament, indelible, enduring, pivotal (when avoidable), crucial (when avoidable), landscape (as abstract noun — "the competitive landscape"), underscore (as a verb meaning "emphasize"), showcase (as a verb), garner, resonate, align with
 
-**Structural red flags — cut or rewrite:**
+**Structural bans — cut or rewrite:**
 - "stands as / serves as / marks a" → use "is"
 - "boasts" → use "has"
-- "highlighting the importance of…" → just state the thing
-- "reflecting broader trends in…" → only use if you can be specific
+- "highlighting the importance of…" → state the thing directly
+- "reflecting broader trends in…" → only if you can be specific
 - "contributing to…" → name the contribution concretely or cut it
-- "Additionally," at the start of a sentence → restructure instead
-- "In today's [landscape/world]…" → skip the opener entirely
+- "Additionally," at sentence start → restructure
+- "In today's [landscape/world]…" → delete entirely
 - "It is worth noting that…" → just note it
 - "Needless to say…" → then don't say it
+- "holistic approach" → explain the actual approach
+- "comprehensive solution" → name the components
+- "leveraging our expertise" → say what the expertise is
 
 **Substitution reference:**
 
 | AI phrase | Human alternative |
 |---|---|
-| "stands as a testament to" | "is evidence of" / just state the fact |
+| "stands as a testament to" | "is evidence of" / state the fact |
 | "in today's rapidly evolving landscape" | delete entirely |
 | "fosters a culture of" | "creates" / "leads to" / cut |
 | "pivotal moment" | "turning point" / name the actual change |
@@ -423,134 +435,78 @@ delve, tapestry, vibrant, nestled, groundbreaking (figurative), rich (figurative
 | "comprehensive solution" | name the actual components |
 | "Additionally," [new sentence] | restructure the sentence flow |
 | "holistic approach" | explain the actual approach |
-| "leveraging our expertise" | say what the expertise is |
 
-**Real em dashes (—) throughout. Not double hyphens (--).**
+Real em dashes (—) throughout. Not double hyphens (--).
 
 ---
 
-## 10. SEO Integration
+## 10. SEO Placement Guidance
 
-### Primary Keywords
-
-| Keyword | Target Placements | Suggested Locations |
+| Keyword | Where to place | Suggested framing |
 |---|---|---|
-| SaaS audit methodology | 2–3 | TL;DR, Section 2 intro, Section 5 |
-| software pain point discovery | 2–3 | Section 1, Section 2 (Part 2), Section 5 |
-| build vs buy requirements | 1–2 | Section 2 (Part 4 solvability filter), Section 5 |
+| "ATS problems" | Section 1, in prose around the table | "The ATS problems we found fell into two cost categories: direct costs and opportunity costs." |
+| "Recruitee limitations" | Section 2, in one of the cluster deep-dives when explaining structural constraints | "These are not Recruitee limitations in the defect sense — they are design boundaries." |
+| "recruitment software issues" | Section 4, when transitioning to the reader's own context | "The recruitment software issues we found are a specific version of a more general pattern." |
 
-### Secondary / Long-Tail Keywords
-
-| Keyword | Where |
-|---|---|
-| SaaS pain point workshop | Section 2, Part 2 |
-| feature usage audit | Section 2, Part 1 |
-| JTBD product discovery | Section 1 |
-| ATS pain points | Section 3 |
-| build vs buy decision | Section 5, closing |
-
-### LLM Optimization
-
-- **BLUF / TL;DR:** Answer the core question (how to discover what's broken in your SaaS) in the first 75 words. Must be extractable as a standalone summary.
-- **Declarative sentences:** Especially in TL;DR and methodology steps.
-- **Entity richness:** Name Recruitee, JTBD, Critical Incident Technique, John C. Flanagan, Clayton Christensen, Pendo, Nielsen Norman Group, Błażej Cepil explicitly.
-- **Table format:** The worksheets and templates are LLM-friendly and also serve as direct answer targets for "SaaS audit template" queries.
-- **Freshness signals:** Use 2019 for Pendo (acknowledge it explicitly), 2026-03 for Appunite's methodology.
+All placements should sound like they belong. If a sentence sounds strained, sacrifice the keyword for readability. The primary goal is a credible, readable article — SEO is secondary.
 
 ---
 
-## 11. Structural Notes for the Writer
+## 11. Pre-Handoff Checklist for the Writer
 
-### Opening line
+The writer must verify every item before passing the draft to the content reviewer.
 
-Do NOT open with:
-- A definition of pain point discovery or SaaS audits
-- "In today's competitive environment..." or any abstract scene-setting
-- A rhetorical question framing
+**Data accuracy — non-negotiable:**
+- [ ] Table in Section 1 matches the brief exactly: all 7 rows, all cost figures, all problem counts, totals row
+- [ ] 150,648 PLN/yr appears at least twice and always with direct/opportunity context nearby
+- [ ] 22,524 PLN/yr direct cost is stated
+- [ ] 128,124 PLN/yr opportunity cost is stated (or shown in the table)
+- [ ] 85% opportunity cost share is stated at least once in prose
+- [ ] Cluster 1 = 101,520 PLN/yr = 67% of total stated in Section 1 prose after table
+- [ ] The 50% attribution assumption for Cluster 1 opportunity cost is named and flagged as an assumption in the Cluster 1 deep-dive
+- [ ] The 23 vs 31 day time-to-hire discrepancy is named in the Cluster 1 deep-dive
+- [ ] The discrepancy had been present for months before the audit — named explicitly
+- [ ] Cluster 5 = 24,636 PLN/yr with 4,680 PLN direct and 19,956 PLN opportunity
+- [ ] Cluster 4 = 10,092 PLN/yr with 6,036 PLN direct and 4,056 PLN opportunity
+- [ ] Build budget of 86,000 PLN mentioned in the closing section
+- [ ] Direct-only ROI (-74%) stated in the closing section
+- [ ] Full ROI (+75%) stated in the closing section
 
-DO open with:
-- The reader's situation (they already know something is wrong with their tools)
-- Appunite's specific experience (the gap between "Recruitee is frustrating" and "here are 24 quantified problems")
-- The core problem: complaints are real but incomplete
-
-Example energy (not exact words):
-- "Every team that runs Recruitee for a year has a list of things that annoy them. We had one too. The problem was our list wasn't the same as our problems."
-- "Before we could decide whether to build our own ATS, we needed to know exactly what we were trying to fix. 'Recruitee is frustrating' is not a specification."
-
-### Headers
-
-Part 4 has 5 main sections. Use headers for navigation. The headers in this brief are directional, not prescriptive — adapt them if a more natural phrasing works better. The essential thing is the structure: why methodology → the methodology → clustering output → what you learn → how to run it yourself.
-
-### Paragraph length
-
-Vary it. This article is educational but should not read like a manual. Short declarative sentences for key points. Longer sentences for reasoning and context. Some paragraphs are one sentence — use them for emphasis.
-
-### Tables and worksheets
-
-Include them. This is a deliberate choice: Part 4 is designed to be useful as a standalone reference. A reader who bookmarks this article should be able to pull up the templates directly. Do not substitute prose descriptions for tables when tables are more usable.
-
-### Word count distribution
-
-| Section | Target |
-|---|---|
-| TL;DR | 50–75 words |
-| Section 1 | 250–300 words |
-| Section 2 | 700–900 words |
-| Section 3 | 250–300 words |
-| Section 4 | 250–300 words |
-| Section 5 | 250–300 words |
-| **Total** | **~2,000–2,500 words** |
-
----
-
-## 12. Pre-Handoff Checklist
-
-The writer must verify every item before passing the draft to the reviewer.
-
-**Structure and completeness:**
-- [ ] Word count is within 2,000–2,500 words
-- [ ] TL;DR is present, 50–75 words, and extractable as standalone summary
-- [ ] Section 1 explains WHY methodology is necessary (not just introduces the methods)
-- [ ] JTBD is explained as a question reframe ("what are you trying to accomplish at this step?")
-- [ ] CIT is explained with the Flanagan attribution and the NN/G source linked
-- [ ] Section 2 contains all four parts of the methodology (feature audit, workshop, clustering, solvability filter)
-- [ ] Feature audit worksheet table is included (4 columns: Feature, Usage Frequency, Requirement Level, Notes)
-- [ ] Pain point collection template table is included (all 5 fields)
-- [ ] Severity scale table is included (all 5 levels with definitions)
-- [ ] All three solvability filter questions are present with their tests
-- [ ] Section 3 includes all 7 cluster names with business consequence sentences
-- [ ] Section 3 includes the 7-cluster summary table
-- [ ] Section 4 opens with narrative insight, NOT cost figures
-- [ ] The 23-day/31-day time-to-hire discrepancy is included in Section 4 as the key concrete example
-- [ ] Column A / Column B cost split table is included in Section 5
-- [ ] Section 5 includes a numbered practical checklist (7 steps)
-
-**Data accuracy:**
-- [ ] Pendo 2019 cited with year and acknowledged as still the largest study available
-- [ ] Appunite figures used correctly: 24 problems, 7 clusters, 22,524 PLN direct, 150,648 PLN total, 86,000 PLN build budget, ~10% features used
-- [ ] 23-day Recruitee figure vs. 31-day actual figure cited correctly
-- [ ] 85% opportunity cost figure mentioned in connection with the total
-- [ ] Cluster 1 (reporting errors) identified as the single largest cost contributor at 101,520 PLN/yr
-- [ ] No invented statistics
-- [ ] No vague sourcing ("experts say", "industry reports show")
+**Structural completeness:**
+- [ ] All 5 sections present in the correct order
+- [ ] Section 1 table is complete: 7 rows + totals row, cost type column populated
+- [ ] Cluster 1 deep-dive references all 4 specific problems (time-to-hire logic, hire count = 0%, cost-per-hire not computable, data refresh lag)
+- [ ] Cluster 5 deep-dive references all 3 specific problems (no recording/transcription, freeform feedback, no side-by-side comparison)
+- [ ] Cluster 4 deep-dive references all 4 specific problems (no competency scoring, past candidates not surfaced, role-level sourcing only, no structured assessment integration)
+- [ ] Each deep-dive covers: day-to-day narrative + structural explanation + cost with direct/opportunity split
+- [ ] Section 3 contains the meta-pattern explanation (structural limitation vs. bug, built for median case)
+- [ ] Section 3 contains a vulnerability admission about normalized workarounds
+- [ ] Section 4 is addressed to the reader's own tools, not just Appunite's situation
+- [ ] Section 5 does not resolve the Part 6 forward reference — the question stays open
 
 **Cross-links:**
-- [ ] Part 1 linked: https://appunite.com/blog/the-saas-tax
-- [ ] Part 2 linked: https://appunite.com/blog/hold-my-beer-building-custom-ats (at minimum when referencing cost table in Section 3 and Column A/B in Section 5)
-- [ ] Part 3 linked: https://appunite.com/blog/why-we-chose-ats-first
-- [ ] Forward reference to Part 5 (full pain point breakdown) in Section 5 closing — no URL needed
+- [ ] Part 2 linked near the table in Section 1
+- [ ] Part 4 linked in Section 1, before or around the table
+- [ ] Part 6 referenced in Section 5 — no URL (does not exist yet)
+- [ ] Part 1 link included if a natural anchor exists
 
-**Tone and voice:**
-- [ ] No banned words from tone-of-voice.md (Section 9 of this brief)
-- [ ] No floating analytical clauses ("...underscoring," "...highlighting," "...reflecting")
-- [ ] No "Additionally," sentence starters
-- [ ] No hollow "not just X, but Y" constructions unless both sides are specific
-- [ ] No Wikipedia-style definitional opening
-- [ ] Real em dashes (—) throughout, not double hyphens (--)
-- [ ] First person consistent: "we" for Appunite decisions, "I" for authorial judgment
-- [ ] Recruitee not disparaged — framed as a product designed for a different market
-- [ ] Solvability filter not minimized — given full weight
+**Tone and style:**
+- [ ] No banned words from Section 9 of this brief
+- [ ] No present-participle analytical tails ("…highlighting," "…underscoring," "…reflecting")
+- [ ] No "In today's world" or equivalent openers
+- [ ] No editorialization about Recruitee being bad or poorly designed
+- [ ] The Cluster 1 vulnerability admission (months of wrong data) is named plainly, not dramatized
+- [ ] Recruitee framed consistently as: right product for its market, wrong fit for Appunite's use case
+- [ ] Section 4 reads as observation, not as a structured "key takeaways" list
+- [ ] Section 5 closes with a genuine open question, not a teaser
+- [ ] Word count is between 2,000 and 2,500 words
+
+**SEO:**
+- [ ] "ATS problems" appears once, naturally, in Section 1
+- [ ] "Recruitee limitations" appears once, naturally, in a cluster deep-dive
+- [ ] "recruitment software issues" appears once, naturally, in Section 4
 
 ---
 
 *Brief complete. Ready for writer handoff.*
+*Content Specialist — content-pipeline team — 2026-03-30*

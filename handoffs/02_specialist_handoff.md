@@ -1,118 +1,112 @@
-# Content Specialist Handoff: How to Discover What's Actually Broken in Your SaaS Tool
+# Content Specialist Handoff: "24 Problems, 7 Clusters — What We Found Wrong with Our ATS"
 
 **From:** Content Specialist
 **To:** Content Writer
-**Date:** 2026-03-19
-**Series:** The SaaS Tax — Part 4
+**Date:** 2026-03-30
+**Series:** The SaaS Tax — Part 5
+**Author:** Błażej Cepil
 **Status:** Brief complete — ready for drafting
 
 ---
 
 ## Summary
 
-The content brief is complete and located at:
+The content brief is at:
 
-**`/Users/Blazej/Code/content-team/content-specialist/content-brief.md`**
+`/Users/Blazej/Code/content-team/content-specialist/content-brief.md`
 
-It contains everything needed to write the article without asking follow-up questions: section-by-section structure with word targets, the complete worksheet tables and template structures (copy-ready), tone guidance, curated data points with placement instructions, cross-link requirements, "What NOT to Do" table (13 items), the full banned-word list from tone-of-voice.md, and a pre-handoff checklist (30+ items).
-
----
-
-## Quick Reference for the Writer
-
-### Article at a Glance
-
-| Dimension | Value |
-|---|---|
-| Title | How to Discover What's Actually Broken in Your SaaS Tool |
-| Author | Błażej Cepil ("we" for Appunite decisions, "I" for authorial judgment) |
-| Type | Blog post — methodology delivery |
-| Series | The SaaS Tax — Part 4 |
-| Length | 2,000–2,500 words |
-| Journey Stage | Edukacja (Education) |
-| Primary Audience | Tier 1 CTOs / Heads of Engineering who want to replicate Appunite's methodology |
-| Goal | Teach the methodology. Position Appunite as people who ask the right questions. |
-| Tone | Enthusiastic, educational. Sage archetype. Practical and replicable. |
-| SEO | "SaaS audit methodology", "software pain point discovery", "build vs buy requirements" |
-
----
-
-### Article Structure
-
-| Section | Word Target | Core Job |
-|---|---|---|
-| TL;DR | 50–75 | BLUF: from "Recruitee is frustrating" to 24 problems / 150,648 PLN/yr. LLM-extractable. |
-| 1: Why "what's broken?" is the wrong first question | 250–300 | Establish WHY methodology is necessary. JTBD reframe + CIT insight. Earns buy-in for Section 2. |
-| 2: The methodology | 700–900 | Four-part methodology with complete worksheets and templates. The article's primary content. |
-| 3: How we clustered 24 problems into 7 themes | 250–300 | Show the actual output. All 7 clusters with business consequence sentences. |
-| 4: What this approach revealed that "just asking" wouldn't | 250–300 | The adapted-around problems. 23-day/31-day discrepancy as the key example. Opens with narrative, not costs. |
-| 5: How to do this yourself | 250–300 | Practical checklist + Column A/B cost split table + forward reference to Part 5. |
+It contains: section-by-section writing instructions with word count targets, the complete cluster overview table (all 7 rows, formatted for direct use), deep-dive instructions for the 3 priority clusters with required data points and problem-level detail, the meta-pattern explanation, the transferable lesson framing, SEO placement guidance, cross-link requirements, 12-item "What NOT to Do" list, the full banned-word list from tone-of-voice.md, and a 34-item pre-handoff checklist.
 
 ---
 
 ## The 5 Most Important Things the Writer Must Get Right
 
-**1. Section 1 is about WHY, not what.** The common mistake is to use Section 1 as a preamble that previews the four methodology steps. It is not that. Its job is to make the reader understand why structured methodology is necessary at all — why "just asking your team what's broken" produces incomplete and misleading results. JTBD and CIT are introduced because they solve a specific problem (adapted-around pain that direct questions miss), not because they are the steps in the methodology. If the reader finishes Section 1 without understanding the adapted-around problem concept, the section has failed.
+**1. The 50% attribution assumption must be named explicitly in the Cluster 1 deep-dive.**
 
-**2. Section 2 must include all four worksheets and templates as tables — not prose descriptions of them.** The feature audit worksheet, pain point collection template, severity scale, and Column A/B cost split table must appear as formatted tables. This is a deliberate editorial choice: Part 4 is designed to be a reusable reference, not just a narrative article. A reader who bookmarks it should be able to pull up the templates directly. Do not substitute "you can create a spreadsheet with columns for Feature, Usage Frequency, Requirement Level, and Notes" for the actual table.
+This is the most consequential fact in the entire article and it is also the most uncomfortable one to write. The opportunity cost for Cluster 1 (99,792 PLN/yr out of 101,520 PLN/yr total) rests on a single assumption: that 50% of failed hires trace back to decisions made on inaccurate reporting data. At 0% attribution, the full-project ROI drops from +75% to -74%. The article's credibility with the CTO audience depends entirely on naming this assumption honestly rather than letting 150,648 PLN float as an unqualified number. Do not soften it. Do not bury it. Name it in the Cluster 1 section after presenting the opportunity cost figure.
 
-**3. The solvability filter (Section 2, Part 4) must not be minimized.** It is the intellectual honesty requirement that makes the whole methodology credible. All three questions must be present with their tests. Appunite's answer to Q3 must be included. If the filter is compressed to a paragraph or skipped, the methodology is just a complaint-quantification exercise — and skeptical CTOs will notice. The brief explains why this matters at length; the writer should read that framing carefully.
+**2. The vulnerability admissions are required — and they must read as plain observation, not confession.**
 
-**4. Section 4 opens with the 23-day/31-day narrative, not with cost figures.** This is non-negotiable. The section's value is the adapted-around problems insight, and the time-to-hire discrepancy is the best concrete illustration of it: a measurable, documentable failure that nobody reported because everyone had silently accepted the tool's output as correct. Leading with costs (150,648 PLN, 85% opportunity cost) turns this into a financial summary, which belongs in Part 2. Lead with the story; the numbers follow.
+Two specific admissions must appear: (a) in the Cluster 1 deep-dive — the 23 vs 31 day time-to-hire discrepancy had been present for months before the audit, and everyone was using the wrong number; (b) in Section 3 — several workarounds had become so embedded that team members no longer experienced them as problems. Both are required by the brief and both are central to the article's credibility. The tone for both is plain and direct: "this happened" not "we are embarrassed to admit this." If the vulnerability moments read as confessional or self-critical beyond what the facts support, rewrite them.
 
-**5. The Column A / Column B cost split table must appear in Section 5.** This is the intellectual honesty requirement for cost estimation. Presenting only the full opportunity-cost total (150,648 PLN) without the Column A direct-costs-only figure (22,524 PLN) is misleading. The table forces the decision-maker to name the attribution assumption they are accepting — which is exactly what makes this methodology credible rather than a post-hoc justification. The brief includes the full table structure; use it.
+**3. Recruitee must not be criticized — anywhere, in any phrasing.**
 
----
+The entire article rests on the "designed for millions of users" framing. Every structural limitation is explained as the natural output of a product built for the median case — not as a failure, a bug, or an oversight. This matters practically: the audience includes CTOs who evaluated or use Recruitee themselves. A sentence that reads as implicit criticism ("surprisingly limited," "basic errors," "fundamental flaw") will break the article's credibility and undermine Appunite's positioning. If a sentence could be read as product criticism, rewrite it as structural mismatch.
 
-## Non-Obvious Creative Decisions in This Brief
+**4. The table in Section 1 must be complete and exact.**
 
-**Why the methodology gets 700–900 words (Section 2 is the longest section).** Part 4's identity in the series is "the methodology post." Parts 1–3 established what the problem is, why Appunite acted, and how to decide what to build. Part 4 delivers the process. Shortchanging Section 2 to balance word count across all five sections would undermine the article's reason for existing. The templates and worksheets are not supplementary material — they are the primary deliverable for the CTOs who came to this article specifically to replicate what Appunite did.
+The table has 7 rows plus a totals row, with columns for problem count, direct cost (PLN/yr), opportunity cost (PLN/yr), total cost (PLN/yr), and cost type. All figures must match the brief exactly. Three clusters have no opportunity cost (Clusters 2, 6, 7) — these must show "—" not "0" or a blank. The totals row must show 24 total problems, 22,524 PLN direct, 128,124 PLN opportunity, and 150,648 PLN total. This table is the article's structural anchor and will be scrutinized by the data-literate audience.
 
-**Why Section 1 argues for methodology rather than introducing it.** The methodological steps are not self-evidently necessary to a reader who has not yet internalized the "adapted-around problems" concept. Without that setup, JTBD and CIT sound like academic frameworks being imported to justify a foregone conclusion. With it, they sound like practical tools that solve a specific, recognizable problem (the pain you stopped noticing). The buy-in work in Section 1 makes Section 2 land differently.
+**5. Section 5 must leave the Part 6 question open — not answered, not teased.**
 
-**Why the 7-cluster table in Section 3 uses business consequence sentences rather than just cluster names.** The sentence structure ([Feature area] does not [capability], which prevents us from [business outcome]) is part of the clustering methodology itself — it is what forces you to articulate the root cause rather than just grouping symptoms. Presenting the clusters in this format shows the methodology in action, not just the output. It also makes each cluster's business significance immediately legible, which matters for readers who are scanning.
-
-**Why Part 4's tone is explicitly different from Parts 2 and 3.** The brief specifies "enthusiastic and educational" rather than "analytical and methodical" (Part 3) or "declarative and energetic" (Part 2). This was a deliberate choice: methodology delivery done purely analytically reads like documentation. Done with Błażej's genuine enthusiasm for the process — the enthusiasm of someone who found something that works — it reads like a practitioner sharing hard-won knowledge. The Sage archetype here is a teacher who is also excited about the subject, not a detached analyst.
-
-**The solvability filter gets its own Part in Section 2 (not a footnote).** There was a temptation to present the filter as a brief qualifier at the end of the clustering step. It is not a qualifier — it is a methodological gate that fundamentally changes what the output means. Elevating it to its own named Part, with all three questions and their tests, signals that this step is as important as the others. The brief explains the most common failure mode this prevents (blaming the tool for process problems); the writer should use that framing.
+The closing is about naming genuine uncertainty, not building suspense. The question is: does the cost evidence actually justify building? The article presents the evidence. The answer is genuinely uncertain because 85% of the cost is opportunity cost that cannot be proven. Section 5 should end with the reader sitting with that uncertainty — knowing what Part 6 will address, but not knowing the answer. No URL for Part 6, no title for Part 6, no hint at the outcome.
 
 ---
 
-## Flags for the Writer
+## Non-Obvious Creative Decisions in the Brief
 
-**The Pendo 2019 citation needs explicit date handling.** The data is from 2019, which some readers will flag. The correct handling — modeled on Part 1 of the series — is to name the year and immediately note it is still the largest study of its kind. Do not omit the year and do not treat it as a weakness without the offsetting context.
+**Why Cluster 4 (competency matrices) is the third deep-dive instead of Cluster 6 (scheduling).**
 
-**Do not reproduce the full cost table from Part 2.** The cluster-level financial breakdown (direct cost, opportunity cost, monthly, annual for all 7 clusters) lives in Part 2 and should not be reproduced here. Section 3 uses a summary table showing cluster names and business consequence sentences only. Section 5 uses the Column A/B cost structure table. Neither replaces the Part 2 financial table.
+Cluster 6 (scheduling gaps, 3,888 PLN/yr) is more universally relatable — manual calendar coordination is a pain anyone with a calendar understands. Cluster 4 (competency matrices, 10,092 PLN/yr) is specific to technical hiring. The brief selects Cluster 4 because it serves the primary audience (CTOs and engineers making build-vs-buy decisions about technical hiring processes) more directly, and because its specificity — senior Elixir engineers, narrow talent pool, longitudinal candidate relationships — is what makes the "non-median case" argument concrete rather than abstract. If the writer finds Cluster 4's narrative too narrow for the article's flow, the brief notes Cluster 6 as an alternative. But Cluster 4 is the preferred choice.
 
-**The 7-cluster business consequence sentences are sourced from research.md (Section C examples and the internal methodology).** Three of the seven sentences appear directly in the research file as examples; the other four were derived from the cluster descriptions in the Part 2 cost table. All seven are in the brief's Section 3 table — the writer does not need to reconstruct them.
+**The day-to-day narrative structure for each deep-dive is not decorative.**
 
-**Recruitee is not a bad product.** This point appears in the "What NOT to Do" table but deserves emphasis here. Any language that reads as a product critique (even implicit — "surprisingly poor," "basic errors," "unacceptable") will undermine Appunite's credibility with readers who currently use or have evaluated Recruitee. The correct framing is structural mismatch: Recruitee was designed for a different market. Appunite's process outgrew it. This is a story about fit, not quality.
+The brief asks the writer to start each cluster deep-dive with a scene: what does this look like on an actual day? This is not stylistic preference — it is the mechanism by which the article achieves its stated goal ("make readers think: my tool has these same problems"). Abstract descriptions of tool limitations do not produce that recognition. Specific scenes — the morning report that does not reflect last night's activity, the interview notes written hours later in a blank text field — do. The writer should write these scenes before writing the structural explanations, so the reader is inside the problem before the analysis begins.
 
-**The forward reference to Part 5 in Section 5 does not have a URL yet.** Reference it by description only: "the next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number." No URL, no publication date.
+**Section 3 carries two distinct jobs that must both be completed.**
+
+Section 3 delivers the meta-pattern (these are structural limitations, not bugs) AND the second vulnerability admission (several workarounds had become invisible). These are related but distinct. The meta-pattern is analytical — it explains WHY the limitations exist. The vulnerability admission is human — it acknowledges that the team had normalized friction without realizing it. Both are required. If Section 3 reads only as analysis, the vulnerability element is missing. If it reads only as self-criticism, the analytical core is missing.
+
+**Section 4 must transfer the lesson without losing specificity.**
+
+The transition from Appunite's ATS experience to the reader's own tools is the most technically difficult part of the article. Done badly, it sounds like a generic listicle: "Check whether your metrics are customizable. Check whether your workflows are flexible." Done well, it sounds like a practitioner sharing a lens they found useful. The brief suggests three questions the writer can use — but they should be integrated into prose, not formatted as a bullet list, and they should be preceded by enough context that the reader understands why these questions matter. The writer should read the Section 4 instructions carefully before drafting.
+
+---
+
+## Flags and Watch-Outs for This Specific Article
+
+**The ROI figures are unusually sensitive.**
+
+Both ROI figures (-74% direct-only, +75% full) appear only in the closing section (Section 5). They should not appear earlier. The article spends Sections 1–4 building the evidence base; the closing is where those numbers are presented as a synthesis. If either ROI figure appears earlier in the draft, move it.
+
+**The series already contains the full cost table.**
+
+The monthly breakdown table (direct cost PLN/mo, opportunity cost PLN/mo, total PLN/mo, annual PLN for all 7 clusters) was published in Part 2. Part 5 uses an annual-cost-only version of the table with additional columns (problem count, cost type). Do not reproduce the Part 2 format — the Section 1 table in the brief is the correct format for Part 5.
+
+**Part 4 already told the origin story.**
+
+Part 4 explained how the 24 problems were found — the methodology, the workshops, the clustering, the solvability filter. Part 5 does not need to re-explain any of that. One sentence reference and a link to Part 4 is sufficient. The writer should assume the reader either read Part 4 or can follow the Part 4 link. Do not compress the methodology into Part 5.
+
+**The 23-day discrepancy is the most important specific data point in the article.**
+
+It appears in Part 2, Part 4, and now Part 5. In Part 5, it serves a different purpose than in the other two articles: it is the vulnerability admission, not the discovery example. In Part 4, it illustrated what structured methodology finds. In Part 5, it illustrates what happens when you trust a tool's output without verifying it. The framing is different; the fact is the same. The writer should make sure the Cluster 1 deep-dive section uses this fact in its Part 5 role — as evidence of how long inaccurate data can go unquestioned.
+
+**GDPR cluster (Cluster 7) does not appear in the deep-dives — this is intentional.**
+
+The brief selects Clusters 1, 5, and 4 for deep dives. Cluster 7 (GDPR, 3,108 PLN/yr) is direct cost only, has no opportunity cost, and is the least relatable for the target audience. It appears in the table and is part of the meta-pattern discussion in Section 3, but it does not get its own deep-dive. This is a deliberate editorial choice: the three selected clusters are more financially significant and more universally recognizable. Do not add a Cluster 7 deep-dive to be comprehensive.
 
 ---
 
 ## Files to Read Before Writing
 
-| Priority | File | What it Contains |
+| Priority | File | What it contains |
 |---|---|---|
-| 1 (Required) | `/Users/Blazej/Code/content-team/content-specialist/content-brief.md` | Full brief: all section instructions, complete worksheet tables, data placement, tone rules, banned-word list, What NOT to Do table, pre-handoff checklist |
-| 2 (Reference) | `/Users/Blazej/Code/content-team/researcher/research.md` | All source URLs, framework citations, full methodology details (Sections A–E), and the cost estimation framework |
-| 3 (Reference) | `/Users/Blazej/Code/content-team/assets/tone-of-voice.md` | Complete banned-word list and Appunite brand voice guidelines — read before finalizing |
-| 4 (Context) | `/Users/Blazej/Code/content-team/final-output/saas-tax-article.md` | Part 1 — for series tone reference and to see how the Pendo 2019 citation was handled |
-| 5 (Context) | `/Users/Blazej/Code/content-team/final-output/ats-manifesto.md` | Part 2 — the financial table lives here; do not reproduce it. Also reference for the 23-day/31-day example. |
-| 6 (Context) | `/Users/Blazej/Code/content-team/final-output/ats-selection-framework.md` | Part 3 — for series continuity and to understand the tone shift Part 4 makes |
+| 1 (Required) | `/Users/Blazej/Code/content-team/content-specialist/content-brief.md` | Full brief: all section instructions, table, deep-dive requirements, data points, tone rules, banned words, pre-handoff checklist |
+| 2 (Required) | `/Users/Blazej/Code/content-team/researcher/research.md` | All 24 specific pain points by cluster, financial breakdowns, meta-pattern analysis, vulnerability admissions source |
+| 3 (Required) | `/Users/Blazej/Code/content-team/final-output/saas-audit-methodology.md` | Part 4 — same author (Błażej Cepil), most recent article in the series, sets the style standard. Read before drafting. |
+| 4 (Reference) | `/Users/Blazej/Code/content-team/final-output/ats-manifesto.md` | Part 2 — where the full cost table first appeared. Do not reproduce its format; understand its context. |
+| 5 (Reference) | `/Users/Blazej/Code/content-team/assets/tone-of-voice.md` | Complete banned-word list and Appunite brand voice guidelines |
 
 ---
 
-## Cross-Links to Include
+## Cross-Links Summary
 
-| Link Target | URL | Where in Article |
+| Link Target | URL | Placement |
 |---|---|---|
-| Part 1: The SaaS Tax | https://appunite.com/blog/the-saas-tax | Section 1 or 5 (series origin reference) |
-| Part 2: The Manifesto | https://appunite.com/blog/hold-my-beer-building-custom-ats | Section 3 (referencing cost table) and Section 5 (Column A/B reference) |
-| Part 3: Why We Chose ATS | https://appunite.com/blog/why-we-chose-ats-first | Intro or TL;DR (natural series reference) |
-| Part 5: Full pain point breakdown | Forward reference only — no URL yet | Section 5 closing |
+| Part 2: The Manifesto | https://appunite.com/blog/hold-my-beer-building-custom-ats | Section 1, near the table |
+| Part 4: Methodology | https://appunite.com/blog/how-to-discover-whats-broken-in-your-saas | Section 1, before or around the table |
+| Part 1: The SaaS Tax | https://appunite.com/blog/the-saas-tax | Optional — Section 4 if natural |
+| Part 6: ROI decision | No URL — forward reference only | Section 5 closing |
 
 ---
 

@@ -1,246 +1,234 @@
-# Review: "How to Discover What's Actually Broken in Your SaaS Tool"
+# Review: "24 Problems, 7 Clusters — What We Found Wrong with Our ATS"
 
-**Reviewer:** Content Reviewer (content-pipeline team)
-**Article:** The SaaS Tax — Part 4
+**Reviewer:** Content Reviewer — content-pipeline team
+**Date:** 2026-03-30
+**Article:** The SaaS Tax — Part 5
 **Author:** Błażej Cepil
-**Date:** 2026-03-19
-**Status: PASS WITH CHANGES**
+**Draft file:** `/Users/Blazej/Code/content-team/content-writer/article-draft.md`
 
 ---
 
-## Verdict
+## VERDICT: PASS
 
-**PASS WITH CHANGES**
-
-The article is structurally sound, tonally clean, and delivers every required element except for three blocking items. Two are factual omissions (86,000 PLN build budget absent from Section 5; 50% attribution assumption not named). One is an ambiguous internal reference ("Section 4 of the cost model") that will confuse readers. Additionally, one sentence requires author confirmation before publish (the "three days" claim). All other criteria across fact accuracy, brief compliance, tone, SEO, and clarity pass cleanly.
+The draft is ready for final output with no changes required. All facts check out against research.md, all brief requirements are met, tone is completely clean, SEO targets are all present and naturally placed, and the structure works throughout. Non-blocking observations are listed at the end for the record.
 
 ---
 
-## 1. Fact Accuracy
+## Section 1: Fact Accuracy
 
-| Claim | Source | Status |
+Every specific claim was cross-referenced against `/Users/Blazej/Code/content-team/researcher/research.md`. Annual figures were verified against the monthly totals in the research table (monthly × 12).
+
+| Claim | Article location | Research source | Status |
+|---|---|---|---|
+| 24 problems total | TL;DR; table total row; closing | Research §7: "24 distinct problems, 7 clusters" | VERIFIED |
+| 7 clusters | Table (7 rows); TL;DR; body prose | Research §1, §3 | VERIFIED |
+| Total annual cost: 150,648 PLN/yr | Table total row; TL;DR; closing | Research §1: 150,648 PLN | VERIFIED |
+| Direct cost: 22,524 PLN/yr | Table total row; closing | Research §1: 1,877 × 12 = 22,524 PLN | VERIFIED |
+| Opportunity cost: 128,124 PLN/yr | Table total row | Research §1: 10,677 × 12 = 128,124 PLN | VERIFIED |
+| 85% opportunity cost share | Section 1 prose; TL;DR | Research §7: "85% of total is opportunity cost" | VERIFIED |
+| Cluster 1 = 101,520 PLN/yr | Table row 1; Section 1 prose; Cluster 1 deep-dive cost line | Research §1: 8,460 × 12 = 101,520 PLN | VERIFIED |
+| Cluster 1 direct: 1,728 PLN/yr | Table row 1; Cluster 1 deep-dive | Research §1: 144 × 12 = 1,728 PLN | VERIFIED |
+| Cluster 1 opportunity: 99,792 PLN/yr | Table row 1; Cluster 1 deep-dive | Research §1: 8,316 × 12 = 99,792 PLN | VERIFIED |
+| Cluster 1 = 67% of total | Section 1 prose; closing | Research §7: "Cluster 1 alone = 67% of total" | VERIFIED |
+| Cluster 1 = 4 problems | Table row 1 | Research §3 C1: 4 problems listed | VERIFIED |
+| Cluster 2 = 2,304 PLN/yr, direct only | Table row 2 | Research §1: 192 × 12 = 2,304 PLN | VERIFIED |
+| Cluster 2 = 3 problems | Table row 2 | Research §3 C2: 3 problems listed | VERIFIED |
+| Cluster 3 = 5,100 PLN/yr | Table row 3 | Research §1: 425 × 12 = 5,100 PLN | VERIFIED |
+| Cluster 3 direct: 780 PLN/yr | Table row 3 | Research §1: 65 × 12 = 780 PLN | VERIFIED |
+| Cluster 3 opportunity: 4,320 PLN/yr | Table row 3 | Research §1: 360 × 12 = 4,320 PLN | VERIFIED |
+| Cluster 3 = 3 problems | Table row 3 | Research §3 C3: 3 problems listed | VERIFIED |
+| Cluster 4 = 10,092 PLN/yr | Table row 4; Cluster 4 deep-dive cost line | Research §1: 841 × 12 = 10,092 PLN | VERIFIED |
+| Cluster 4 direct: 6,036 PLN/yr | Table row 4; Cluster 4 deep-dive | Research §1: 503 × 12 = 6,036 PLN | VERIFIED |
+| Cluster 4 opportunity: 4,056 PLN/yr | Table row 4; Cluster 4 deep-dive | Research §1: 338 × 12 = 4,056 PLN | VERIFIED |
+| Cluster 4 = 4 problems | Table row 4 | Research §3 C4: 4 problems listed | VERIFIED |
+| Cluster 5 = 24,636 PLN/yr | Table row 5; Cluster 5 deep-dive cost line | Research §1: 2,053 × 12 = 24,636 PLN | VERIFIED |
+| Cluster 5 direct: 4,680 PLN/yr | Table row 5; Cluster 5 deep-dive | Research §1: 390 × 12 = 4,680 PLN | VERIFIED |
+| Cluster 5 opportunity: 19,956 PLN/yr | Table row 5; Cluster 5 deep-dive | Research §1: 1,663 × 12 = 19,956 PLN | VERIFIED |
+| Cluster 5 = 3 problems | Table row 5 | Research §3 C5: 3 problems listed | VERIFIED |
+| Cluster 6 = 3,888 PLN/yr, direct only | Table row 6 | Research §1: 324 × 12 = 3,888 PLN | VERIFIED |
+| Cluster 6 = 3 problems | Table row 6 | Research §3 C6: 3 problems listed | VERIFIED |
+| Cluster 7 = 3,108 PLN/yr, direct only | Table row 7 | Research §1: 259 × 12 = 3,108 PLN | VERIFIED |
+| Cluster 7 = 3 problems | Table row 7 | Research §3 C7: 3 problems listed | VERIFIED |
+| 50% attribution assumption named explicitly | Cluster 1 deep-dive (paragraph 4); closing | Research §3 C1 financial reasoning; brief requirement | VERIFIED |
+| 23-day reported vs. 31-day actual time-to-hire | Cluster 1 deep-dive opening | Research §3 C1: "Recruitee reports 23 days. Manual tracking showed 31." | VERIFIED |
+| Build budget: 86,000 PLN | Closing note | Research §7: "Build budget: 86,000 PLN" | VERIFIED |
+| Direct-only ROI: -74% | Closing note | Research §7: "Direct ROI: -74%" | VERIFIED |
+| Full ROI with opportunity: +75% | Cluster 1 deep-dive (directional consequence); closing | Research §7: "Full ROI: +75%" | VERIFIED |
+| Cluster 5 opportunity cost description as "conservative estimate" for offer acceptance and early attrition | Cluster 5 deep-dive cost line | Research §3 C5 financial breakdown: "conservative estimate based on incremental improvement in offer acceptance and early attrition" | VERIFIED — summary is accurate and fair to the underlying model |
+
+**Fact accuracy verdict: All 36 key claims verified. No errors found.**
+
+---
+
+## Section 2: Brief Compliance
+
+| Requirement | Article | Status |
 |---|---|---|
-| 80% of features rarely or never used | Pendo 2019 — confirmed in research.md Section 2 | VERIFIED |
-| 12% of features drive 80% of daily usage | Pendo 2019 — confirmed in research.md Section 2 | VERIFIED |
-| Pendo 2019 noted as still the largest study, no newer study superseded it | Brief requirement and research.md — present in article Section 2 Part 1 | VERIFIED |
-| ~10% of Recruitee features actively used (Appunite internal) | research.md Section 2 | VERIFIED |
-| 24 pain points, 7 clusters | research.md Section 2 | VERIFIED |
-| Total cost 150,648 PLN/yr | research.md Section 2 — present in TL;DR and Section 4 | VERIFIED |
-| Direct cost 22,524 PLN/yr | research.md Section 2 — present in Section 4 | VERIFIED |
-| 85% of total is opportunity cost | research.md Section 2 — present in Section 4 | VERIFIED |
-| Cluster 1 (reporting errors) at 101,520 PLN/yr | research.md Section 2 — present in Section 3 narrative | VERIFIED |
-| 23-day Recruitee vs. 31-day actual time-to-hire | research.md Section 2 — present in Section 4 as lead example | VERIFIED |
-| CIT developed by John C. Flanagan (1954) | research.md — present in Section 1 with NN/G citation | VERIFIED |
-| JTBD popularized by Clayton Christensen and Tony Ulwick / Strategyn | research.md — present in Section 1 with Product School citation | VERIFIED |
-| Individual scoring before group discussion prevents anchoring bias | research.md (GLIDR) — present in Section 2 Part 2 | VERIFIED |
-| Divergence of 2+ points triggers discussion; calibration not consensus | research.md (GLIDR) — present in Section 2 Part 2 | VERIFIED |
-| All four source URLs present in footer | Pendo, NN/G, Product School, GLIDR — all four present | VERIFIED |
-| Build budget 86,000 PLN — required in Section 5 | research.md Section 2 — ABSENT from article Section 5 | FAIL |
-| Attribution assumption: 50% of failed hires attributable to reporting data | research.md Section E — ABSENT from article | FAIL |
-| Direct ROI -74% / Full ROI +75% | research.md Section 2 — not required by brief explicitly, but needed to anchor the Column A/B table in Section 5 | FAIL (see note) |
+| All 5 sections present in correct order | Glance / Top 3 / Pattern / Your Tools / Closing | PASS |
+| Author: Błażej Cepil | Present in metadata | PASS |
+| Series: The SaaS Tax — Part 5 | Present in metadata | PASS |
+| TL;DR present | Present | PASS |
+| TL;DR length 50–75 words | 67 words (verified by count) | PASS |
+| Body prose 2,000–2,500 words | ~2,187 words (table rows, metadata, and sources excluded per writer's measurement note) | PASS |
+| Section 1 table — 7 rows + totals row, all required columns | Present, matches brief specification exactly | PASS |
+| Section 1: 1–2 sentences before table | Two sentences before table | PASS |
+| Section 1: 2–4 sentences after table | Four sentences after table | PASS |
+| Section 1 names Cluster 1 = 101,520 = 67% of total | "Cluster 1 alone accounts for 101,520 PLN/yr — 67% of the total" | PASS |
+| Section 1 names 85% opportunity cost share | Present in prose after table | PASS |
+| 150,648 PLN appears with direct/opportunity context nearby at every mention | Section 1 (table and prose together provide full context); closing names all components | PASS |
+| Section 2 deep-dives: Clusters 1, 5, 4 in that order | Present in that exact order | PASS |
+| Cluster 1: day-to-day opening scene | Opens with morning pipeline check before a planning meeting | PASS |
+| Cluster 1: all 4 specific problems named | Time-to-hire logic; hire count shows 0%; cost-per-hire not computable; data refresh lag — all 4 present | PASS |
+| Cluster 1: structural explanation (hardcoded, not configurable) | "There is no configuration option that changes the underlying logic. It is hardcoded — built for the median case." | PASS |
+| Cluster 1: cost with direct/opportunity split | Present | PASS |
+| Cluster 1 vulnerability admission — months-long discrepancy named plainly | "The 23-day discrepancy had been there for months before the audit." — plain, not dramatized | PASS |
+| 50% attribution assumption flagged as assumption, with ROI consequence named | Present in Cluster 1 deep-dive (paragraph 4) and again in closing | PASS |
+| Cluster 5: day-to-day opening scene | Opens with interview ending, interviewer writing notes from memory hours later | PASS |
+| Cluster 5: all 3 specific problems named | No recording/transcription; freeform feedback only; no side-by-side comparison — all 3 present | PASS |
+| Cluster 5: structural explanation | "Recruitee's feedback model was designed for the use case where notes are sufficient" | PASS |
+| Cluster 5: cost with direct/opportunity split | Present | PASS |
+| Cluster 4: day-to-day opening scene | Opens with new senior Elixir role opening, team remembers a strong past candidate who cannot be found | PASS |
+| Cluster 4: all 4 specific problems named | No competency scoring; past candidates not surfaceable; role-level sourcing only; no structured assessment integration — all 4 present | PASS |
+| Cluster 4: structural explanation | "Recruitee was designed for companies hiring generalists at moderate volume" | PASS |
+| Cluster 4: cost with direct/opportunity split | Present | PASS |
+| Section 3 covers meta-pattern (structural limitations, not bugs) | "The seven clusters are not a list of failures. They share a single structural root cause." | PASS |
+| Section 3 names "designed for median case" framing | Used multiple times throughout Section 3 | PASS |
+| Section 3 lists 4 dimensions where Appunite differs | Low volume/high quality bar; narrow talent pool; complex technical evaluation; strategic data ownership — all 4 present | PASS |
+| Section 3 vulnerability: normalized workarounds | "Several of the workarounds had become invisible" paragraph — named plainly | PASS |
+| Section 4 transferable lens, not a listicle | Three prose paragraphs each opening with a question, with explanatory context | PASS |
+| Section 5 closes with Part 6 setup question | "That question...is what the next post addresses. The evidence is on the table. The verdict is not." | PASS |
+| Section 5 does NOT include Part 6 URL or title | "next post" only — no URL, no title, no hint at answer | PASS |
+| Section 5 names build budget 86,000 PLN | Present | PASS |
+| Section 5 names direct-only ROI -74% | Present | PASS |
+| Section 5 names full ROI +75% | Present | PASS |
+| Part 1 link included | Present in Section 4 — "SaaS Tax framework" anchor with correct URL | PASS |
+| Part 2 link in Section 1, near table | "first introduced in Part 2" — present in Section 1 prose | PASS |
+| Part 4 link in Section 1, before or around table | "The methodology behind these numbers is in Part 4" — present in Section 1 prose | PASS |
+| Part 6 forward reference in Section 5 — no URL | Present | PASS |
 
-### Fact accuracy notes
+**Brief compliance verdict: All 41 requirements pass. No failures.**
 
-**FAIL 1 — 86,000 PLN build budget absent from Section 5.**
-The brief (Section 6 data table, placement: "Section 5 reference") requires the build budget figure to appear in Section 5. The Column A/B table in Section 5 uses "[your budget]" as a placeholder in the Build Budget row. Appunite's actual figure of 86,000 PLN is never stated in the article. This also means the -74% direct ROI and +75% full ROI figures are absent, which leaves the Column A/B table as a template with no worked Appunite example — weakening the section's credibility as "here's exactly what we did." Required fix: add one sentence giving Appunite's specific numbers (86,000 PLN build budget, -74% direct ROI, +75% full ROI) in or immediately after the Column A/B table.
-
-**FAIL 2 — 50% attribution assumption not named.**
-Research.md Section E is explicit: "Appunite's largest assumption: 50% of failed hires attributable to inaccurate reporting data. That one assumption drove 67% of total estimated opportunity cost. Changing it from 50% to 0% turned +75% ROI into -74% ROI." The brief's Section 5 instruction says: "If the build only works in Column B, name the attribution assumption that drives the gap." The article gives this advice generically ("name the attribution assumption") but does not apply it to Appunite's own case. The 50% figure is never stated anywhere in the article. This is a material omission — naming the assumption is the entire point of the Column A / Column B split. Required fix: name the 50% assumption explicitly in Section 4 or Section 5 (see Change 1 below for combined fix with FAIL from clarity section).
-
-**NOTE — "Section 4 of the cost model" phrasing (also a clarity blocking issue).**
-Section 4, final paragraph: "That is why Section 4 of the cost model is where most of the uncertainty lives." There is no "Section 4 of the cost model" in any document readers have seen or will see. Part 2 of the series covers the financial model but is not presented to readers with numbered internal sections. The writer correctly flagged this in Judgment Call #5. This sentence must change. Recommended replacement integrates FAIL 2 fix: "That is why the attribution assumption for Cluster 1 is the most important number to examine before committing. Appunite's assumption was that 50% of failed hires traced back to inaccurate reporting data — one number that moves the ROI from -74% to +75%. Changing it changes everything." This resolves both the confusing reference and the missing attribution assumption.
-
----
-
-## 2. Brief Compliance
-
-| Requirement | Status | Notes |
-|---|---|---|
-| Length: 2,000–2,500 words (prose from TL;DR through closing) | PASS | Full file wc = 3,641 total words. Accounting for metadata header, table cell content, horizontal rules, and sources list, body prose estimate is 2,100–2,300 words — within range. Writer's note about table content counting as primary content is correct per brief intent. |
-| TL;DR present and 60–80 words | PASS | Present. Approximately 75 words including the Part 3 parenthetical. Brief ceiling is 75 (brief says 50–75). At ceiling but not over. Non-blocking. |
-| TL;DR extractable as standalone summary | PASS | Reads coherently without surrounding context. States the method (four steps), the output (24 problems, 150,648 PLN), and the claim (replicable in a week). |
-| All 5 sections present in correct order | PASS | Section 1 (why methodology), Section 2 (methodology), Section 3 (clustering output), Section 4 (what it revealed), Section 5 (how to do it yourself) — all present, correctly ordered. |
-| Section 2 has all four sub-parts | PASS | Feature audit (Part 1), workshop (Part 2), clustering (Part 3), solvability filter (Part 4) — all present with correct structures. |
-| Feature audit worksheet table (4 columns) | PASS | Present. Columns: Feature, Usage Frequency, Requirement Level, Notes — correct. |
-| Pain point collection template table (5 fields) | PASS | Present. All 5 fields: Description, Frequency, Severity, Current workaround, Time per occurrence — correct. |
-| Severity scale table (5 levels with definitions) | PASS | Present. All 5 levels with definitions matching research.md and brief exactly. |
-| Calibration note present | PASS | Present: "a workaround that takes 10 minutes and is done = 3. A workaround that introduces data you will need to reconcile later = 4. A 5 is reserved for genuine blocks, not inconveniences." |
-| Column A / Column B cost split table | PASS (partial) | Table is present with correct structure and all required rows. FAIL on Build Budget row — shows "[your budget]" not Appunite's 86,000 PLN. See Fact Accuracy FAIL 1. |
-| Section 3 has all 7 cluster rows with business consequence sentences | PASS | All 7 clusters present in table, all 7 business consequence sentences present, wording matches research.md and brief exactly. |
-| Section 4 opens with narrative, NOT cost figures | PASS | Section 4 opens: "The most interesting finding was not the 24 problems. It was the problems nobody had thought to report." Costs appear only in the fourth paragraph of the section. |
-| 23-day/31-day narrative used prominently in Section 4 | PASS | Present as the lead example. Writer's extended JTBD framing (connecting to "getting an accurate number to make headcount decisions") earns its additional ~50 words — it explains the mechanism, not just the symptom. |
-| All four cross-links present | PASS | Part 1 (The SaaS Tax): Section 5 Step 1 — correct. Part 2 (hold-my-beer): Section 3 and Section 5 — correct. Part 3 (why-we-chose-ats-first): TL;DR parenthetical — present (see placement note). Part 5 forward reference: Section 5 closing — present, no URL. All four satisfied. |
-| Part 3 cross-link placement | NON-BLOCKING | Brief allowed "Intro or TL;DR as natural series reference." TL;DR parenthetical placement works. Link text is clean and does not damage TL;DR extractability. Acceptable as written. Writer offered an alternative placement in Section 1 closing — viable but not required. |
-| Author: Błażej Cepil | PASS | Present in metadata. |
-| Series: The SaaS Tax — Part 4 | PASS | Present in metadata. |
-| Recruitee framed as mismatch, not failure | PASS | Recruitee is never disparaged. The framing is consistent: the mismatch is between Appunite's evolved process and what any general-purpose ATS was designed to handle. The solvability filter section explicitly acknowledges some problems were process problems, not Recruitee's fault — this actively protects against the "Recruitee is bad" framing the brief prohibits. |
-| Solvability filter given full weight | PASS | Section 2 Part 4 gives it genuine prominence. "I think the solvability filter is the most underrated step in this entire process" is appropriate authorial voice (first-person "I" for judgment). All three questions present with their tests. Appunite's Q3 answer included. |
-| Forward reference to Part 5 is description only, no URL | PASS | "The next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number." No URL. Correct. |
+One observation for the record: the writer used "designed for the median case" throughout rather than the brief's alternative phrasing "designed for millions of users." The brief does not mandate specific phrasing for this concept — it mandates the explanatory logic. "Designed for the median case" is more analytically precise and avoids any risk of reading as sarcasm. The choice is sound.
 
 ---
 
-## 3. Tone
+## Section 3: Tone Scan
 
-### Banned word scan (all words from tone-of-voice.md absolute bans)
+### Banned words
 
-| Word / Phrase | Found? |
-|---|---|
-| delve | NO |
-| tapestry | NO |
-| vibrant | NO |
-| nestled | NO |
-| groundbreaking (figurative) | NO |
-| rich (figurative) | NO |
-| intricate / intricacies / interplay | NO |
-| cultivate / fostering (figurative) | NO |
-| testament | NO |
-| indelible / enduring | NO |
-| pivotal | NO |
-| crucial | NO |
-| landscape (abstract noun) | NO |
-| underscore (as verb meaning "emphasize") | NO |
-| showcase (as verb) | NO |
-| garner | NO |
-| resonate | NO |
-| align with | NO |
+All banned words checked by search against the full draft. Zero matches found for any of the following:
 
-**Result: CLEAN.** Zero banned words found.
+- delve, tapestry, vibrant, nestled, groundbreaking (figurative), rich (figurative)
+- intricate, intricacies, interplay, cultivate, fostering (figurative)
+- testament, indelible, enduring
+- pivotal, crucial
+- landscape (as abstract noun)
+- underscore (as verb)
+- showcase (as verb)
+- garner, resonate, align with
 
-### Structural red flag scan
+**Result: CLEAN.**
 
-| Pattern | Found? |
-|---|---|
-| "stands as / serves as / marks a" | NO |
-| "boasts" | NO |
-| "highlighting the importance of" | NO |
-| "reflecting broader trends in" | NO |
-| "contributing to" | NO |
-| "Additionally," as paragraph opener | NO |
-| "In today's [landscape/world]" | NO |
-| "It is worth noting that" | NO |
-| "Needless to say" | NO |
+### Structural red flags
+
+Searched for: "stands as / serves as / marks a," "boasts," "highlighting the importance of," "reflecting broader trends," "contributing to," "Additionally," as paragraph opener, "In today's landscape/world," "It is worth noting that," "Needless to say."
 
 **Result: CLEAN.**
 
 ### Floating analytical clauses
 
-Scanning for present-participle sentence endings ("...underscoring," "...highlighting," "...reflecting," "...fostering," "...demonstrating"):
+Searched for sentences ending in "...underscoring," "...highlighting," "...reflecting," "...fostering," "...contributing."
 
-**Result: CLEAN.** None found anywhere in the article.
+**Result: CLEAN.**
 
 ### Vague attribution
 
-**Result: CLEAN.** All claims are attributed to named sources (Pendo 2019, GLIDR, NN/G, Product School) or stated as first-person Appunite experience ("we found," "our audit found," "we ran"). No "experts say," "industry reports show," or "many companies find" constructions present.
+Searched for "experts say," "industry reports show," "many companies find," "observers note."
 
-### "Not just X but Y" constructions
+**Result: CLEAN.** Every claim is attributed to Appunite's direct experience or explicitly identified as an assumption ("I think the attribution is reasonable. Inaccurate pipeline data does affect headcount decisions...But I cannot prove the exact causal chain.").
 
-**Result: CLEAN.** None found.
+### Em dash usage
 
-### "Additionally," paragraph openers
+All separating dashes in prose are proper em dashes (—). The `---` sequences are standard Markdown horizontal rules, not prose dashes.
 
-**Result: CLEAN.** None found.
+**Result: CLEAN.**
 
-### Double hyphens used as dashes in prose
+### Overall register
 
-**Result: CLEAN.** All em dashes are proper typographic em dashes (—). Horizontal rules use `---` which is correct markdown syntax, not prose dashes.
+The draft reads as authentic and data-led throughout. The first-person conventions are correctly applied: "we" for Appunite decisions and findings, "I" for authorial judgment. This split is used precisely — the attribution assumption paragraph in Cluster 1 is the clearest example, where the author distinguishes between what the evidence says and what he personally believes about it. The vulnerability admissions are stated as plain observation, not self-flagellation. Section 3's "product-market fit problem, not a product quality problem" framing is confident without being dismissive of readers who use Recruitee. The closing achieves genuine uncertainty without melodrama.
 
-### Overall register assessment
+The prose rhythm varies correctly across sections: functional and direct in Section 1 around the table, narrative and scene-based in the cluster deep-dives, analytical in Section 3, observational in Section 4, and taut in the closing. No section feels mismatched.
 
-The article achieves the required tone throughout. Section 1 earns buy-in without being preachy — the adapted-around problems concept is explained with a specific, relatable mechanism (the Tuesday workaround, the metric everyone uses). The "The pain is real. The signal is invisible." line is well-deployed: short declarative sentences for emphasis, used once, not repeated. Section 2 reads as something a team lead could genuinely hand to a colleague. The Part 4 solvability filter section uses first-person "I" correctly for authorial judgment ("I think the solvability filter is the most underrated step") — this is exactly the right register for methodology articles. The 23-day/31-day narrative in Section 4 has genuine momentum. The article does not tip into manifesto energy (the concern for Part 2) and is not dry or academic. The enthusiasm for the methodology is present without being forced.
-
----
-
-## 4. SEO
-
-| Keyword | Status | Locations |
-|---|---|---|
-| "SaaS audit methodology" | PARTIAL | Concept present throughout but exact phrase does not appear as a string. Brief target: 2–3 placements. One natural insertion: Section 2 intro ("This is a four-part process" could become "This SaaS audit methodology is a four-part process"). |
-| "software pain point discovery" | PARTIAL | "Pain point discovery workshop" present as a sub-header. "Pain point discovery" without "software" appears. Exact phrase "software pain point discovery" absent. Brief target: 2–3 placements. |
-| "build vs buy requirements" | PARTIAL | "build-vs-buy decision" present in TL;DR and Section 5. Concept of requirements and solvability filter covered thoroughly. Exact phrase absent. Brief target: 1–2 placements. |
-| Recruitee (named entity) | PASS | Present in TL;DR, Section 2 Part 1, Section 3, Section 4. |
-| Pendo (named entity) | PASS | Named in Section 2 Part 1 with year (2019) and context note. |
-| JTBD / Jobs to Be Done (named entity) | PASS | Named in Section 1 with full attribution (Clayton Christensen, Tony Ulwick / Strategyn). "JTBD framing" used in Section 4. |
-| Critical Incident Technique / Flanagan (named entity) | PASS | Named in Section 1 with "John C. Flanagan (1954)" attribution and NN/G link. |
-| Błażej Cepil (named entity) | PASS | Present in metadata. Normal for this series. |
-
-### SEO summary
-
-The three primary keyword phrases are present as concepts but not as exact strings. The brief target was 2–3 placements each. Forcing exact insertions into mid-paragraph prose would degrade readability. However, one targeted insertion per keyword in a section opener, header, or strong declarative sentence would satisfy the brief requirement without feeling forced. This is non-blocking.
+**Register verdict: PASS.**
 
 ---
 
-## 5. Clarity and Flow
+## Section 4: SEO Check
 
-### Section 1: Why "what's broken?" is the wrong first question
+| Target phrase | Present? | Location | Natural? |
+|---|---|---|---|
+| "ATS problems" | Yes | Section 1: "The ATS problems we found fell into two cost categories" | Yes — matches brief's suggested framing exactly |
+| "Recruitee limitations" | Yes | Cluster 5 deep-dive: "These are not Recruitee limitations in the defect sense — they are design boundaries." | Yes — matches brief's suggested framing exactly |
+| "recruitment software issues" | Yes | Section 4: "The recruitment software issues we found are a specific version of a more general pattern." | Yes — matches brief's suggested framing exactly |
 
-Does its job well. The adapted-around problem is established with a clear mechanism before JTBD and CIT are introduced. The framing that users "stopped noticing" is concrete — not vague theory. JTBD and CIT are introduced with just enough attribution and application to be credible without over-explaining for a technically literate audience. The closing transition ("These two reframes — JTBD for what to ask, CIT for how to ask it — are what separate a structured discovery methodology from a complaint session. The next section is that methodology.") is a clean pivot.
+**SEO verdict: All three targets present, in correct sections, in natural phrasing. PASS.**
 
-No clarity issues.
+---
 
-### Section 2: The methodology
+## Section 5: Clarity and Flow Assessment
 
-All four parts execute cleanly. The numbered lists and tables are well-integrated with explanatory prose. The required structures (worksheet, template, severity scale, solvability filter questions) are all present and formatted correctly.
+### Section 1 — "The 7 clusters at a glance"
 
-**Flag — "three days" claim (writer's Judgment Call #3).**
-"I have seen teams run shorter versions in three days when they needed to move quickly." This is first-person asserted experience. The writer flagged uncertainty about whether Błażej has personally observed this. If he has not, this sentence must change to "Teams have run compressed versions in as few as three days" or be cut. The structural impact of cutting it is zero. This requires author confirmation before publish — reviewer cannot resolve it.
+The table works as a visual overview. The cost-type column gives readers immediate orientation for how to read each cluster's numbers. The two post-table callouts (Cluster 1 = 67% of total; 85% opportunity cost) do the right analytical work without editorializing. The forward reference to Section 2 is a single sentence and is well-placed. Cross-links to Part 2 and Part 4 are woven into the prose naturally. No clarity issues.
 
-The GLIDR citation in Section 2 Part 2 appears mid-paragraph ("individual scoring before group discussion prevents anchoring bias — when scores diverge by two or more points, discuss the evidence behind each score ([GLIDR on pain vs. frequency scores])"). The link placement is functional but would read more cleanly if the hyperlink moved to the sentence end. Non-blocking.
+### Section 2 — "The top 3 that matter most"
 
-### Section 3: How we clustered 24 problems into 7 themes
+All three deep-dives open with scenes rather than category labels. Cluster 1 is the strongest: the 23-day vs. 31-day gap opens the section with an immediately disorienting specific fact before explaining its source. The four problems are laid out in sequence without feeling like a checklist. The vulnerability admission paragraph ("Here is the honest part") earns its placement — the writer was right to put the evidence first and the uncomfortable observation second.
 
-Executes its purpose: makes the methodology concrete by showing Appunite's actual output. The 7-cluster table is correct and complete. The post-table narrative adds genuine value — the observation about "problems that appeared unrelated during the workshop turned out to share a single root cause" demonstrates real discovery rather than scripted outcome. The Cluster 1 / 101,520 PLN mention is placed correctly in the narrative after the table, not in the table itself (matching brief instruction). Part 2 cross-link is natural.
+Cluster 5 is the most universally relatable and executes cleanly. The note-taking-from-memory scene ("Somewhere between two hours and the following morning...") is the right entry point. The structural explanation — feedback model designed for the use case where notes are sufficient — is the clearest and most pointed of the three structural analyses.
 
-No clarity issues.
+Cluster 4 is appropriately specific to technical hiring. The re-sourcing-from-zero scenario is the right hook for this audience. All four problems are covered in one compact paragraph that reads as description rather than a list.
 
-### Section 4: What this approach revealed that "just asking" wouldn't
+Cost lines at the end of each deep-dive are correctly formatted with the direct/opportunity split shown.
 
-The narrative opens correctly with the adapted-around problem, not with numbers. The 23-day/31-day example is the strongest paragraph in the article — specific, concrete, and illustrates the methodology's value precisely. The JTBD connection to "getting an accurate number to make headcount decisions" is earned, not forced.
+### Section 3 — "The pattern across all 7"
 
-**BLOCKING — "Section 4 of the cost model" phrasing.**
-Final paragraph: "That is why Section 4 of the cost model is where most of the uncertainty lives — and why naming the attribution assumption explicitly is the most important thing you can do before committing to a build." No "Section 4 of the cost model" exists in any document the reader has seen. Part 2 is the financial model post, but readers have not seen it structured as numbered sections. This will read as a broken internal reference. Required fix: replace this sentence and use the opportunity to introduce the missing 50% attribution assumption (Fact Accuracy FAIL 2). Suggested replacement: "That is why the attribution assumption for Cluster 1 is the most important number to examine before committing. Appunite's assumption was that 50% of failed hires traced back to inaccurate reporting data — one number that moves the ROI from -74% to +75%. Changing it changes everything." This resolves both the confusing reference and the missing attribution assumption in approximately the same word count.
+The meta-pattern lands clearly. The "product-market fit problem, not a product quality problem" framing is direct and avoids both failure modes (sounding defensive, reading as a Recruitee teardown). The four dimensions of Appunite's non-median use case are specific enough to feel earned after the deep-dives. The normalized-workarounds closing paragraph is plainly observed and correctly placed.
 
-### Section 5: How to do this yourself
+### Section 4 — "What this means for your tools"
 
-The 7-step checklist is clear, complete, and actionable. The Column A/B table is present with the correct structure. Part 1 and Part 2 cross-links are placed correctly. The forward reference to Part 5 closes the section cleanly — "The next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number" creates pull without hype.
+The three-question prose structure does not read as a listicle. Each paragraph has enough internal weight that the parallel structure reads as deliberate organization, not a bulleted list in paragraph form. The closing sentence — pointing at the SaaS Tax framework link — closes the section without overselling. The writer's concern about three parallel question-openers was reasonable to flag, but the execution avoids the problem.
 
-**BLOCKING — Build budget absent.**
-The Column A/B table Build Budget row shows "[your budget]" with no Appunite example figure. 86,000 PLN is entirely absent from the article. The fix is one sentence added in or after the table: "For Appunite's Recruitee assessment: build budget 86,000 PLN, Column A ROI -74%, Column B ROI +75%." This demonstrates the template with real numbers, which is the entire purpose of including the table.
+### Section 5 — "Closing note"
+
+The closing does exactly what is required: names the constraints on the cost model honestly, states both ROI scenarios with the build budget figure, and leaves the question genuinely open. "The evidence is on the table. The verdict is not." is a strong close — confident about the analysis, honest about its limits, and sets up Part 6 without teasing it. The forward reference is minimal and correct.
+
+**Clarity and flow verdict: PASS across all five sections. No sentences that are confusing, overlong, or unclear.**
 
 ---
 
 ## Required Changes (Blocking)
 
-### Change 1 — Fix "Section 4 of the cost model" phrasing and add 50% attribution assumption (Section 4, final paragraph)
-
-**Current text:**
-> "That is why Section 4 of the cost model is where most of the uncertainty lives — and why naming the attribution assumption explicitly is the most important thing you can do before committing to a build."
-
-**Required replacement (suggested):**
-> "That is why the attribution assumption for Cluster 1 is the most important number to examine before committing. Appunite's assumption was that 50% of failed hires traced back to inaccurate reporting data — one number that moves the ROI from -74% to +75%. Changing it changes everything. The full breakdown is in [Part 2](https://appunite.com/blog/hold-my-beer-building-custom-ats)."
-
-This simultaneously resolves: the confusing "Section 4 of the cost model" reference, the missing 50% attribution assumption (Fact Accuracy FAIL 2), and adds the -74%/+75% ROI figures that the Column A/B table in Section 5 implies but does not state.
-
-### Change 2 — Add 86,000 PLN build budget to Section 5 (Column A/B table or adjacent sentence)
-
-**Required addition:** One sentence giving Appunite's specific figures in or immediately after the Column A/B table. Suggested placement: as a note row in the table or as a sentence following the table: "For Appunite's Recruitee assessment: build budget 86,000 PLN, Column A ROI -74%, Column B ROI +75%."
-
-### Change 3 — Author confirmation required for "three days" claim (Section 2 intro)
-
-"I have seen teams run shorter versions in three days when they needed to move quickly." This must be confirmed by Błażej before publish. If he has personally seen or run a compressed version: keep it. If not: change "I have seen" to "Teams have run" or cut the sentence entirely. The section structure is unaffected by either change.
+None.
 
 ---
 
 ## Non-Blocking Suggestions
 
-**Suggestion 1 — SEO exact-phrase insertions.**
-The three primary keywords ("SaaS audit methodology," "software pain point discovery," "build vs buy requirements") are present as concepts but not as exact strings. One targeted insertion each — in a section opener, closing sentence, or strong declarative sentence — would satisfy the brief's 2–3 placement target without forcing unnatural phrasing. Highest-value insertion: "SaaS audit methodology" in Section 2's opening sentence.
+These observations do not affect publication readiness. The writer may act on them or not.
 
-**Suggestion 2 — GLIDR citation placement.**
-The GLIDR hyperlink in Section 2 Part 2 appears mid-paragraph. Moving it to a sentence end would improve readability. No content change required.
+**1. Cluster 5 — "no standard questions to respond to" vs. "no standard dimensions to respond to"**
 
-**Suggestion 3 — TL;DR length.**
-The TL;DR runs approximately 75 words — at the brief's ceiling of 75. The Part 3 parenthetical cross-link accounts for ~15 words. If the link is ever moved to the Section 1 closing (the writer's alternative placement), the TL;DR would tighten to ~60 words and be cleaner. Leave as is unless a second edit pass is planned.
+The brief specifies "no standard dimensions to respond to." The draft uses "no standard questions to respond to." Both convey the same point. "Dimensions" is slightly more precise for a technical hiring context. Not a material difference — note only.
+
+**2. Section 3 — four-dimension paragraph density**
+
+The paragraph listing the four dimensions where Appunite differs from the median case packs all four observations into a single paragraph. It reads fine. If a future editor wants more breathing room, each dimension could be its own sentence. No change needed for publication.
+
+**3. Sources list formatting**
+
+The sources list uses plain URLs rather than linked anchor text. If the CMS renders Markdown links, switching to anchor-text format would be cleaner. Not a publication blocker.
 
 ---
 
-*Review complete. Draft requires three targeted changes before publish. No structural rewrites needed. After changes are made, article is approved.*
+*Review complete — 2026-03-30 — content-pipeline / content-reviewer*

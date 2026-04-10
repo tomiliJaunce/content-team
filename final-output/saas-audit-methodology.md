@@ -1,10 +1,5 @@
 # How to Discover What's Actually Broken in Your SaaS Tool
 
-**Author:** Błażej Cepil
-**Series:** The SaaS Tax — Part 4
-
----
-
 **TL;DR:** Most companies can tell you what annoys them about their tools. Few can quantify it rigorously enough to support a build-vs-buy decision. This post walks through the exact methodology Appunite used to go from "Recruitee is frustrating" to 24 specific problems costing an estimated 150,648 PLN per year. Four steps: feature audit, pain point workshop, clustering, solvability filter. The process is replicable by any team lead in a week. ([Part 3: Why We Chose ATS First](https://appunite.com/blog/why-we-chose-ats-first) covers what to do once you have the numbers.)
 
 ---
@@ -62,8 +57,6 @@ Two traps to avoid:
 Daily usage does not equal Required. Some habits exist only because the current tool forces a particular workaround — the habit disappears if the constraint disappears. The test for Required is: if version 1 of a replacement did not have this feature, would we be blocked?
 
 Do not mark Required just because the feature currently exists. Mark Required only if removing it would genuinely stop work.
-
-**Appunite's result:** Our Recruitee audit found approximately 10% of features actively used. According to Pendo's 2019 Feature Adoption Report — still the largest study of feature adoption available, and no newer study has superseded it — 12% of features drive 80% of daily usage across the industry ([Pendo 2019](https://www.pendo.io/resources/the-2019-feature-adoption-report/)). Our number tracked closely with the pattern. The same Pendo report found that 80% of features are rarely or never used. Our audit was confirming a structural reality, not an anomaly specific to Recruitee.
 
 ---
 
@@ -216,19 +209,7 @@ This methodology does not require a research background. It requires blocking ti
 6. Cluster the pain points by feature area. Write the business consequence sentence for each cluster before moving to cost estimation. If you cannot write the sentence, the cluster is not ready.
 7. Apply the solvability filter to every cluster. Do not skip this step. This is the one that separates a rigorous assessment from a post-hoc justification.
 
-**When you get to cost estimation, keep two columns visibly separate:**
-
-| | Column A: Direct costs only | Column B: Direct + opportunity |
-|---|---|---|
-| Annual cost of current pain | Time your team loses to workarounds | Direct costs + attributed opportunity costs |
-| Build budget | [your budget] | [same] |
-| ROI | (A − budget) ÷ budget | (B − budget) ÷ budget |
-| Payback period | Budget ÷ A savings | Budget ÷ B savings |
-| Break-even attribution | N/A | Minimum % of opportunity costs that must be real to justify the build |
-
-For Appunite's Recruitee assessment: build budget 86,000 PLN, Column A ROI -74%, Column B ROI +75%.
-
-Column A is the defensible case. Column B is the ambitious case. If the build only works in Column B, name the attribution assumption that drives the gap — and design a one-to-two week sanity check before committing. This is not academic caution; it is the difference between a decision you can defend under scrutiny and one you cannot. (See [Part 2](https://appunite.com/blog/hold-my-beer-building-custom-ats) for how Appunite handled this split and where the uncertainty in our own numbers lives.)
+If you want to have a detailed blueprint, you can download it here. https://www.appunite.com/is-saas-over-honest-evaluation
 
 The next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number. If you want to see exactly how a specific cluster was costed, that post will have it. The methodology described here becomes concrete when you see the actual numbers it produced.
 

@@ -2,78 +2,51 @@
 
 **From:** Content Reviewer
 **To:** Team Lead
-**Date:** 2026-03-19
-**Article:** "How to Discover What's Actually Broken in Your SaaS Tool"
-**Series:** The SaaS Tax — Part 4
+**Date:** 2026-03-30
+**Article:** "24 Problems, 7 Clusters — What We Found Wrong with Our ATS"
+**Series:** The SaaS Tax — Part 5
 **Author:** Błażej Cepil
 
 ---
 
-## Verdict: PASS WITH CHANGES
+## Verdict: PASS
 
-The article is NOT ready for final output in its current form. Three blocking changes are required before publish. After those changes are made, the article is approved — no structural rewrites needed.
+The article is ready for final output as written. No blocking changes required.
 
 Full review is at `/Users/Blazej/Code/content-team/content-reviewer/approval.md`.
 
 ---
 
-## Blocking Changes Required
-
-### Change 1 — Fix "Section 4 of the cost model" phrasing + add missing 50% attribution assumption (Section 4, final paragraph)
-
-The sentence "That is why Section 4 of the cost model is where most of the uncertainty lives" refers to a document structure that does not exist in any published or forthcoming post. It will confuse readers. The writer flagged this themselves (Judgment Call #5).
-
-Additionally, research.md Section E specifies that Appunite's key attribution assumption — 50% of failed hires attributable to inaccurate reporting data — is the single number that moves the ROI from -74% to +75%. This assumption is never named in the article, despite the brief explicitly requiring it. The -74% and +75% ROI figures are also absent.
-
-**Required:** Replace the confusing sentence and simultaneously name the 50% assumption and the ROI figures. One targeted rewrite of 3–4 sentences resolves both issues.
-
-Suggested replacement for the final paragraph of Section 4:
-> "That is why the attribution assumption for Cluster 1 is the most important number to examine before committing. Appunite's assumption was that 50% of failed hires traced back to inaccurate reporting data — one number that moves the ROI from -74% to +75%. Changing it changes everything. The full breakdown is in [Part 2](https://appunite.com/blog/hold-my-beer-building-custom-ats)."
-
-### Change 2 — Add 86,000 PLN build budget to Section 5
-
-The build budget figure (86,000 PLN) is required by the brief in Section 5 but is completely absent from the article. The Column A/B table in Section 5 shows "[your budget]" as a placeholder with no worked Appunite example, which undermines the table's purpose.
-
-**Required:** Add one sentence giving Appunite's specific figures in or immediately after the Column A/B table. The -74%/+75% ROI figures introduced by Change 1 (Section 4) can also be referenced here for consistency. Suggested: "For Appunite's Recruitee assessment: build budget 86,000 PLN, Column A ROI -74%, Column B ROI +75%."
-
-### Change 3 — Author confirmation required before publish: the "three days" claim
-
-Section 2 intro contains: "I have seen teams run shorter versions in three days when they needed to move quickly." This is asserted as first-person experience. The writer flagged uncertainty about whether Błażej has personally observed this.
-
-**Required:** Błażej must confirm before publish. If he has seen it: keep as written. If not: change "I have seen" to "Teams have run" or cut the sentence (zero structural impact).
-
----
-
 ## Summary of Review Findings
 
-**Fact accuracy:** 15 of 17 checked claims verified. Two failures: 86,000 PLN build budget absent (Change 2 above) and 50% attribution assumption absent (Change 1 above). All third-party statistics verified: Pendo 2019 (80% features unused, 12% drive 80% usage), GLIDR anchoring bias note, CIT/Flanagan 1954, JTBD (Christensen/Ulwick). All Appunite internal figures verified: 24 problems, 7 clusters, 150,648 PLN total, 22,524 PLN direct, 85% opportunity cost, 101,520 PLN Cluster 1, 23-day/31-day discrepancy. All four source URLs present in footer.
+**Fact accuracy:** All 36 key claims verified against research.md. Every cluster total, every direct/opportunity cost split, every problem count, and every named assumption checked out. Annual figures were verified against the monthly research table (monthly × 12) with no discrepancies. The 50% attribution assumption is named explicitly in the Cluster 1 deep-dive and again in the closing. The 23-day vs. 31-day discrepancy is present and correctly framed. Build budget (86,000 PLN), direct ROI (-74%), and full ROI (+75%) are all in the closing section. No fact errors found.
 
-**Brief compliance:** All structural requirements met after the blocking changes are applied. All required tables present (feature audit worksheet, pain point collection template, severity scale, Column A/B cost split). All 7 cluster rows with business consequence sentences correct and complete. Section 4 opens with narrative, not cost figures. All four cross-links present. Recruitee correctly framed as mismatch throughout. Solvability filter given full weight. Forward reference to Part 5 present with no URL.
+**Brief compliance:** All 41 requirements pass. All 5 sections present in correct order. Section 1 table matches the brief specification exactly. All three cluster deep-dives (Clusters 1, 5, 4 in that order) cover the required day-to-day narrative, structural explanation, and cost split. All required problems referenced per cluster: C1 (4 problems), C5 (3 problems), C4 (4 problems). Section 3 delivers the meta-pattern and normalized-workarounds vulnerability admission. Section 4 is prose-based, not a listicle. Section 5 closes with a genuine open question, no Part 6 URL, no answer hinted at. All four cross-links present (Parts 1, 2, 4 linked; Part 6 forward reference with no URL).
 
-**Tone:** Completely clean. Zero banned words. Zero floating analytical clauses. Zero vague attributions. Zero "not just X but Y" constructions. Zero "Additionally," openers. All em dashes correct (—). Register is enthusiastic and educational — achieves the "here's exactly how we did it" texture required for Part 4. Not manifesto energy, not dry analytical.
+**Tone:** Completely clean. Zero banned words. Zero structural red flags. Zero floating analytical clauses. Zero vague attributions. All em dashes correct (—). Register is authentic and specific throughout — achieves the transparent practitioner voice required for this article. Vulnerability admissions are plain, not confessional. Recruitee framed consistently as the right product for its market, wrong fit for Appunite's use case.
 
-**SEO:** Named entities all present (Recruitee, Pendo, JTBD/Jobs to Be Done, Critical Incident Technique/Flanagan, Błażej Cepil). Three primary keyword phrases ("SaaS audit methodology," "software pain point discovery," "build vs buy requirements") present as concepts but not as exact strings. See non-blocking suggestions.
+**SEO:** All three targets present in natural placement: "ATS problems" in Section 1; "Recruitee limitations" in Cluster 5 deep-dive; "recruitment software issues" in Section 4. Each matches the brief's suggested framing.
 
-**Clarity and flow:** Sections 1, 2, 3, and 5 are clean. Section 4 has the one blocking phrase issue (Change 1). The 23-day/31-day narrative is the strongest passage in the article. The solvability filter section is well-executed. Extended treatment of JTBD framing in Section 4 earns its place.
+**Clarity and flow:** Clean across all five sections. Cluster deep-dives read as day-to-day experiences, not financial summaries. The meta-pattern in Section 3 lands the structural-limitations-not-bugs insight clearly. The closing sets up Part 6 without being abrupt or promotional.
+
+**Word count:** TL;DR at 67 words (target: 50–75). Body prose at approximately 2,187 words (target: 2,000–2,500).
 
 ---
 
-## Non-Blocking Suggestions for Team Lead's Consideration
+## Non-Blocking Notes for Team Lead's Consideration
 
-1. **SEO exact-phrase insertions.** The three primary keyword phrases are present as concepts but not as exact strings. One targeted insertion each — in a section opener or strong declarative sentence — would satisfy the brief's 2–3 placement target. Highest value: "SaaS audit methodology" in Section 2's opening sentence.
+1. "No standard questions to respond to" in Cluster 5 vs. the brief's "no standard dimensions to respond to" — different phrasing, same point. Not a concern.
 
-2. **GLIDR citation placement.** The GLIDR hyperlink in Section 2 Part 2 appears mid-paragraph. Moving it to a sentence end would improve readability. Purely cosmetic.
+2. Sources list uses plain URLs rather than linked anchor text. If the CMS handles Markdown links, anchor-text format is slightly cleaner. Optional cosmetic improvement.
 
-3. **TL;DR length.** Runs approximately 75 words — at the brief's ceiling. The Part 3 parenthetical cross-link accounts for the ceiling hit. If a second edit pass is planned for any reason, the TL;DR could be tightened. Not urgent.
+3. The writer used "designed for the median case" rather than "designed for millions of users." The analytical precision of "median case" is better for this article's primary audience of CTOs. No change needed.
 
 ---
 
 ## What Happens Next
 
-1. Pass the three required changes to the content writer (or make them directly if the team lead is handling final output).
-2. Get Błażej's confirmation on the "three days" claim (Change 3).
-3. Once changes are applied, the article is approved for final output — no re-review required unless the writer introduces new content beyond the specified changes.
+The article is approved for final output. No revisions required. The writer's draft can be published as is.
 
 ---
 
-*Handoff complete. Article requires three targeted changes before publish.*
+*Handoff complete. Article passes review — ready to publish.*

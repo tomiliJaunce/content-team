@@ -1,242 +1,125 @@
-# How to Discover What's Actually Broken in Your SaaS Tool
+# 24 Problems, 7 Clusters — What We Found Wrong with Our ATS
 
 **Author:** Błażej Cepil
-**Series:** The SaaS Tax — Part 4
+**Series:** The SaaS Tax — Part 5
 
 ---
 
-**TL;DR:** Most companies can tell you what annoys them about their tools. Few can quantify it rigorously enough to support a build-vs-buy decision. This post walks through the exact methodology Appunite used to go from "Recruitee is frustrating" to 24 specific problems costing an estimated 150,648 PLN per year. Four steps: feature audit, pain point workshop, clustering, solvability filter. The process is replicable by any team lead in a week. ([Part 3: Why We Chose ATS First](https://appunite.com/blog/why-we-chose-ats-first) covers what to do once you have the numbers.)
+**TL;DR:** The discovery methodology from [Part 4](https://www.appunite.com/blog/how-to-discover-whats-actually-broken-in-your-saas-tool) produced 24 specific problems across 7 clusters, with a total estimated cost of 150,648 PLN per year — 85% of which is opportunity cost, not direct time loss. This post walks through all 7 clusters: what each problem looks like in practice, why Recruitee cannot solve it structurally, and what the financial breakdown behind each cluster means for the decision ahead.
 
 ---
 
-## Why "what's broken?" is the wrong first question
+## The 7 clusters at a glance
 
-You already know something is off with your SaaS tool. Your team has complaints. The tool doesn't do quite what you need it to do. Some reports are unreliable. Some workflows require steps that feel unnecessary. You have a list.
+The ATS problems we found fell into two cost categories: direct costs (time your team actually burns doing manual work) and opportunity costs (the harder-to-measure downstream consequences). The full picture, across all 7 clusters, looks like this.
 
-The problem with that list is not that it's wrong. It is that it is incomplete in a specific way: it captures what people notice. It does not capture what people have stopped noticing.
+The methodology behind these numbers is in [Part 4](https://www.appunite.com/blog/how-to-discover-whats-actually-broken-in-your-saas-tool). The cost model was [first introduced in Part 2](https://www.appunite.com/blog/manifesto-building-our-own-ats) in monthly form. What follows is the annual view with problem counts added.
 
-When you ask your team "what's broken?", you get a survey of recent frustrations — the friction they encountered this week, the thing that annoyed them in their last session with the tool. What you do not get are the problems they adapted around six months ago. The workarounds that have become so automatic that nobody experiences them as problems anymore. The workaround that takes three extra minutes every Tuesday has become just how Tuesday works. The metric that is slightly wrong has become the metric everyone uses, because everyone stopped trusting the accurate one and nobody remembers when that happened.
+| # | Cluster | Problems | Direct cost (PLN/yr) | Opportunity cost (PLN/yr) | Total (PLN/yr) | Cost type |
+|---|---|---|---|---|---|---|
+| 1 | Reports calculate with errors | 4 | 1,728 | 99,792 | 101,520 | Mixed (dominant: opportunity) |
+| 2 | Metrics not customisable | 3 | 2,304 | — | 2,304 | Direct only |
+| 3 | Funnels not elastic | 3 | 780 | 4,320 | 5,100 | Mixed |
+| 4 | No competency matrices + sourcing inefficiency | 4 | 6,036 | 4,056 | 10,092 | Mixed |
+| 5 | No interview transcription + manual feedback | 3 | 4,680 | 19,956 | 24,636 | Mixed (dominant: opportunity) |
+| 6 | Calendar/scheduling gaps | 3 | 3,888 | — | 3,888 | Direct only |
+| 7 | GDPR compliance gaps | 3 | 3,108 | — | 3,108 | Direct only |
+| **Total** | | **24** | **22,524** | **128,124** | **150,648** | |
 
-The pain is real. The signal is invisible.
-
-This is the core insight behind Jobs to Be Done (JTBD), a product discovery framework popularized by Clayton Christensen and Tony Ulwick (Strategyn). JTBD reframes the question: not "what is broken in this tool?" but "what are you trying to accomplish at this step?" ([Product School JTBD Guide](https://productschool.com/blog/product-fundamentals/jtbd-framework)). When you ask someone about their job — the outcome they are actually trying to reach — you surface the unfulfilled need, not their opinion of how the current tool handles it. Users who have built workarounds have stopped asking for a fix. The job remains unfinished. They just stopped noticing.
-
-Critical Incident Technique works alongside this. Developed by John C. Flanagan in 1954, CIT collects specific memorable incidents — times when a tool significantly failed someone — rather than general impressions ([Nielsen Norman Group on CIT](https://www.nngroup.com/articles/critical-incident-technique/)). The key insight from NN/G: one user reporting a critical incident may reveal something more important than the same low-stakes frustration reported by ten. High-impact failures matter more than frequently-reported annoyances. Asking "tell me about a specific time this tool failed you at a critical moment" breaks the workaround habit — because those critical moments are still memorable, even if the underlying problem has become invisible in daily use.
-
-These two reframes — JTBD for what to ask, CIT for how to ask it — are what separate a structured discovery methodology from a complaint session. The next section is that methodology.
-
----
-
-## The methodology
-
-This is a four-part process. We ran it over roughly two weeks with our recruitment team before making any build-vs-buy decision about Recruitee. Teams have run compressed versions in as few as three days when they needed to move quickly. The parts are sequential — each one prepares the input for the next.
-
-### Part 1: Feature usage audit
-
-Before you run any workshops, establish the baseline: what fraction of the platform does your team actually use?
-
-The reason this comes first: without it, pain point workshops produce complaints without context. You do not know whether a missing capability is a gap in a tool you use heavily or a gap in a tool you barely use. The ratio changes the interpretation of everything that follows.
-
-**How to run the audit:**
-
-1. Build a complete feature list — from vendor documentation, an admin panel walkthrough, and 20 minutes with daily users. Be specific. Not "reporting" but each distinct report type. Not "integrations" but each integration your team has enabled or considered. Expect 40–150 items depending on the platform.
-2. For each feature, classify it on two axes:
-   - Usage frequency: Daily / Weekly / Monthly / Never
-   - Requirement level: Required / Nice to have / Not needed
-3. Calculate your **usage ratio**: features used at least monthly ÷ total features × 100
-4. Calculate your **required ratio**: features marked Required ÷ total features × 100
-
-**Feature audit worksheet:**
-
-| Feature | Usage Frequency | Requirement Level | Notes |
-|---|---|---|---|
-| [Feature name] | Daily / Weekly / Monthly / Never | Required / Nice to have / Not needed | [Optional context] |
-
-**How to read the results:**
-
-- Required ratio above 20%: the tool may be well-matched to your process — or your team has built its workflow around the tool's structure. Both are worth examining before you proceed.
-- Required ratio under 15%: territory where a custom build covering that 15% could plausibly replace the full platform.
-
-Two traps to avoid:
-
-Daily usage does not equal Required. Some habits exist only because the current tool forces a particular workaround — the habit disappears if the constraint disappears. The test for Required is: if version 1 of a replacement did not have this feature, would we be blocked?
-
-Do not mark Required just because the feature currently exists. Mark Required only if removing it would genuinely stop work.
-
-**Appunite's result:** Our Recruitee audit found approximately 10% of features actively used. According to Pendo's 2019 Feature Adoption Report — still the largest study of feature adoption available, and no newer study has superseded it — 12% of features drive 80% of daily usage across the industry ([Pendo 2019](https://www.pendo.io/resources/the-2019-feature-adoption-report/)). Our number tracked closely with the pattern. The same Pendo report found that 80% of features are rarely or never used. Our audit was confirming a structural reality, not an anomaly specific to Recruitee.
+Two things worth naming before the deep dives. Cluster 1 alone accounts for 101,520 PLN/yr — 67% of the total — despite containing only 4 of the 24 problems. And 85% of the total (128,124 PLN/yr) is opportunity cost, not direct time loss. That composition matters for how the numbers should be read, and for what it would take to justify the build. The next section covers the three clusters where that story is most concentrated.
 
 ---
 
-### Part 2: Pain point discovery workshop
+## The top 3 that matter most
 
-The feature audit tells you how much of the tool you use. The workshop tells you what actually hurts when you use it.
+### Cluster 1 — Reports calculate with errors
 
-**Workshop setup:**
+On a typical morning during an active hiring period, someone opens the tool to check the pipeline before a planning meeting. The time-to-hire metric reads 23 days. Manual tracking shows the real number is 31. That is not a rounding error — it is an eight-day gap between what the tool reports and what the process actually does.
 
-- **Participants:** 2–3 daily users from different workflow areas, someone who can speak to business impact, and a decision-maker. Cap at six people. Do not invite the vendor relationship owner unless they are also a daily user — their presence changes what people say.
-- **Duration:** 90 minutes. First 20 minutes: individual collection. Next 50 minutes: discussion, clarification, and scoring. Final 20 minutes: solvability filter (covered in Part 4 below). Extend to two hours if the group is engaged and generating new insights.
-- **Pre-work:** Share the pain point collection template at least 24 hours in advance. We gave our team a week. Ask for at least five entries before the session. Pre-filled templates produce deeper outputs than blank ones filled in during the workshop — people arrive having already thought about it, and the session becomes calibration rather than recollection.
+The calculation logic counts calendar days from job posting. Appunite's pipeline does not start the clock there. What matters is from first candidate interaction, or from the stage transitions that reflect actual movement through the funnel. Those two definitions produce different numbers. There is no configuration option that changes the underlying logic. It is hardcoded — built for the median case, and the median case defines time-to-hire differently than we do.
 
-**Pain point collection template:**
+The other three problems in this cluster compound this. The hire count metric shows 0% regardless of actual completed hires — this is not a data lag, it is a metric that is visibly broken with no workaround other than ignoring it. Cost-per-hire requires combining Recruitee data with payroll data the tool cannot access, so the team either skips the metric or exports raw data and calculates manually. Reports do not update in real time, so morning pipeline data does not reflect the previous evening's activity during active hiring periods.
 
-| Field | Definition |
-|---|---|
-| Description | Specific and concrete. Not "reporting doesn't work well" but "hire count always shows 0% regardless of actual hires" |
-| Frequency | Daily / Weekly / Monthly / Quarterly |
-| Severity | 1–5 anchored to business consequence (see scale below) |
-| Current workaround | What the team does today. "Nothing, we just live with it" is a valid answer. |
-| Time per occurrence | Minutes per workaround. Estimate conservatively — this number feeds the cost calculation. |
+Here is the honest part. The 23-day discrepancy had been there for months before the audit. Every planning meeting, every hiring retrospective, every headcount conversation was built on the wrong number. Not because nobody cared about accuracy — because questioning the tool's output at that level had stopped being a habit. The expectation of accuracy had been abandoned so gradually that nobody could locate the moment it happened.
 
-**Severity scale:**
+Cost: 101,520 PLN/yr total — 1,728 PLN/yr direct (time manually cross-checking and correcting reports) and 99,792 PLN/yr opportunity.
 
-| Score | Definition |
-|---|---|
-| 1 | Annoying, no workaround needed |
-| 2 | Workaround exists, under 5 min, reliable |
-| 3 | Workaround exists but time-consuming or introduces data risk |
-| 4 | No clean workaround; data quality suffers or significant recurring manual work |
-| 5 | Blocking: task cannot be completed, compliance risk, or downstream failures |
-
-Calibration note: a workaround that takes 10 minutes and is done = 3. A workaround that introduces data you will need to reconcile later = 4. A 5 is reserved for genuine blocks, not inconveniences.
-
-Have participants complete their severity scores individually before group discussion. Individual scoring before group discussion prevents anchoring bias — when scores diverge by two or more points, discuss the evidence behind each score ([GLIDR on pain vs. frequency scores](https://help.glidr.io/en/articles/2826779-pain-vs-frequency-scores)). The goal is calibration, not consensus. If two people see the same problem very differently, that disagreement is signal.
+That opportunity cost figure carries an assumption that must be named explicitly. It rests on the estimate that 50% of failed hires trace back to decisions made on inaccurate reporting data. At Appunite's hiring volume and cost-per-hire, one additional failed hire per year attributable to bad data produces the bulk of that number. I think the attribution is reasonable. Inaccurate pipeline data does affect headcount decisions, and headcount decisions do affect hiring outcomes. But I cannot prove the exact causal chain. At 0% attribution, the ROI on the entire build project moves from +75% to -74%. That is not a footnote. It is the most consequential single number in the cost model, and every figure that follows should be read with that in mind.
 
 ---
 
-### Part 3: Clustering methodology
+### Cluster 5 — No interview transcription + manual feedback
 
-After the workshop, you have a list of individual pain points. Some of them are symptoms of the same underlying failure. The clustering step makes that visible.
+The interview ends. The interviewer goes back to their desk. Somewhere between two hours and the following morning, they write their notes from memory. The feedback form is an open text field. No template, no scoring rubric, no standard dimensions to respond to. One interviewer writes three sentences. Another writes three paragraphs. A third uses bullets that map to nothing the next interviewer used for the same candidate.
 
-**Why this matters:** The cost and solvability of a cluster — not of an individual pain point — is what drives the build decision. A tool that fails in five different ways because it cannot edit a funnel after it is created has one root cause, not five separate problems. Cluster it correctly and you can cost it, scope it, and apply the solvability filter to it. Leave it as five separate complaints and you cannot.
+When the hiring team meets to decide between two finalists, they are comparing things that cannot actually be compared. The notes exist. The signal from the conversation — the candidate's explanation of a system design decision, the specific way they navigated a difficult scenario — mostly does not.
 
-**How to cluster:**
+This is not a failure of the interviewers. It is what happens when the feedback structure is a blank text field. There is no recording, no transcript, no structured capture of what was said. After each technical conversation, what was discussed lives only in the interviewer's memory until they write it up, and degrades from the moment the call ends. When making a final decision between two strong candidates, there is no structured view showing both side by side. Decision-makers work from fragmented notes in different formats written at different times.
 
-1. Group pain points by feature area — the part of the tool where the problem lives.
-2. For each group, write a single sentence naming the cluster by its business consequence.
+Recruitee's feedback model was designed for the use case where notes are sufficient — generalist roles, standard interview formats, lower technical depth. For evaluating senior Elixir engineers on architecture decisions, system design thinking, and communication quality in client-facing contexts, an open text field is not a data structure. These are not Recruitee limitations in the defect sense — they are design boundaries. No configuration of the existing fields produces structured, comparable, searchable interview data. The product was not built for this, because most of its customers do not need this.
 
-The sentence structure that works:
-
-> *[Feature area] does not [capability], which prevents us from [business outcome] / results in [business consequence].*
-
-Three examples from our Recruitee assessment:
-
-- *Reports are not elastic and calculate with errors, preventing us from seeing accurate time-to-hire and cost-per-hire metrics.*
-- *Funnels are not editable after the fact, resulting in data corruption and unreliable pipeline metrics.*
-- *It is not possible to design competency matrices, preventing us from systematically screening past candidates for new roles.*
-
-Writing this sentence is the test for whether your cluster is ready. If you cannot articulate the business consequence in one sentence, the cluster is not ready for cost estimation. Either the grouping is wrong, or you need to dig further into what the root cause actually is.
-
-A good cluster has 3–8 individual pain points, one dominant feature area, and a business consequence you can write in one sentence. If 15 pain points land under one cluster, it is probably two clusters.
-
-**Appunite's result:** 24 individual problems collapsed into 7 clusters. A ratio of roughly 3–4 pain points per cluster is typical for a tool that has been in use for a year or more. By that point, users have found most of the friction — even if they have normalized it.
+Cost: 24,636 PLN/yr total — 4,680 PLN/yr direct (20–30 minutes per interview for post-interview writeups, multiplied by interview volume and hourly rate) and 19,956 PLN/yr opportunity (lost signal leading to worse offer acceptance rates and early attrition outcomes, at a conservative estimate).
 
 ---
 
-### Part 4: The solvability filter
+### Cluster 4 — No competency matrices + sourcing inefficiency
 
-I think the solvability filter is the most underrated step in this entire process. It is the point where the methodology either earns its credibility or loses it.
+A new senior Elixir role opens. The team remembers that six months ago, they interviewed someone strong — the timing was wrong, headcount had not been approved. That candidate exists in the system. Their interview notes exist too. But there is no way to search for "candidates with strong Elixir scores, passed over for timing rather than performance." The data is in a text field. It is not queryable.
 
-The most common failure mode in pain point assessment: teams find 20 problems, assume all 20 require new software, build the tool, and six months later three of those problems still exist. Because the root cause was never the software. The filter is what prevents this. Without it, you have a list of complaints with numbers attached. With it, you have a rigorous assessment.
+So the recruiter starts from zero: same job boards, same outreach, same channels. A candidate the team already knew was qualified goes untouched, because there is no path from "new role opens" to "here are the people we already evaluated."
 
-Apply the filter to every cluster before moving to cost estimation.
+The four specific problems: no structured competency scoring, so there is no aggregate view across interviewers and no way to compare candidates systematically; past candidates are not surfaceable for new roles, because the data exists in notes rather than in queryable fields; sourcing is role-level, not competency-level, so there is no way to target outreach based on documented profiles from prior interactions; and technical assessment results from external tools cannot be attached to the candidate record in a structured way — they live in email threads or spreadsheets, disconnected from the candidate's history.
 
-**Q1: Is this a software problem or a process problem?**
+Recruitee was designed for companies hiring generalists at moderate volume, where each candidate interaction is relatively self-contained and the talent pool is large enough that re-sourcing from scratch is manageable. Senior Elixir engineers are a small community, and the relationship with a candidate who was good-but-wrong-timing has real value months or years later. The tool's data model was never built to support longitudinal candidate relationships because most of its customers do not need that.
 
-Test: if we had unlimited configuration in the current tool, would this problem still exist? If yes, it is a process problem. Building new software will not fix it.
-
-This is the uncomfortable question. Teams are reluctant to identify process problems in a tool assessment because it feels like a criticism of the team rather than the tool. Run it anyway. A process problem that gets built into a custom tool is a process problem you now own and maintain.
-
-**Q2: Could a different SaaS solve this?**
-
-Switching SaaS is almost always cheaper and faster than building custom software. The bar for building is: no existing product solves this adequately, or the switching cost across all pain points exceeds the build cost. If a different SaaS would solve two of your seven clusters, factor that in before deciding to build everything.
-
-**Q3: Does solving this require data ownership or custom logic no SaaS can provide?**
-
-This is where building typically wins. If the pain requires querying data in ways the vendor does not expose, building workflows that do not exist in any available tool, or maintaining context outside any vendor's data model — custom software has a structural advantage that switching cannot address.
-
-Appunite's answer to Q3: the ability to track candidate relationships over time, surface past candidates for new roles based on competency data, and own the full history of every interaction. No ATS we evaluated offered this as a native feature. That answer cleared the filter.
+Cost: 10,092 PLN/yr total — 6,036 PLN/yr direct (recruiter time on manual sourcing steps that a competency-indexed system would reduce) and 4,056 PLN/yr opportunity (cost of re-sourcing from scratch rather than surfacing known, pre-qualified candidates).
 
 ---
 
-## How we clustered 24 problems into 7 themes
+## The pattern across all 7
 
-When we finished the clustering step, something clicked. The 24 problems had not felt like 24 separate things during the workshop — there was overlap, similarity, obvious groupings. But it was only when we wrote the business consequence sentence for each cluster that the actual shape of the problem became clear.
+The seven clusters are not a list of failures. They share a single structural root cause: Recruitee was built for the median case, and Appunite is not that case.
 
-Most of the friction traced back to seven root failures. Not 24.
+The median case looks like this: a company with moderate hiring volumes, generalist roles, a standard funnel structure, standard reporting needs, and standard GDPR handling. That product is well-designed for that market. The calculation logic, the feedback model, the sourcing structure, the compliance handling — all of it makes sense for an SMB hiring across a range of roles from a large talent pool.
 
-| # | Cluster | Business consequence |
-|---|---|---|
-| 1 | Reports calculate with errors | Reports are not elastic and calculate with errors, preventing us from seeing accurate time-to-hire and cost-per-hire metrics. |
-| 2 | Metrics not customisable | Metrics cannot be configured to match our actual process, limiting pipeline visibility to whatever the vendor decided to surface. |
-| 3 | Funnels not elastic | Funnels are not editable after the fact, resulting in data corruption and unreliable pipeline metrics. |
-| 4 | No competency matrices + sourcing inefficiency | It is not possible to design competency matrices, preventing us from systematically screening past candidates for new roles. |
-| 5 | No interview transcription + manual feedback | There is no structured way to capture or review interview content, meaning hiring signal is lost and each evaluation cycle depends on memory rather than data. |
-| 6 | Calendar/scheduling gaps + workflow coordination | Scheduling and coordination require manual effort for every step, adding friction to each hiring cycle and increasing time-to-hire. |
-| 7 | GDPR compliance gaps + manual processing | GDPR-required actions cannot be automated, creating compliance risk and recurring manual processing that scales with hiring volume. |
+Appunite's use case differs on four dimensions. Hiring volume is low and the quality bar is high — the tool was optimized for throughput, but what matters here is depth of evaluation at each step. The talent pool is narrow — senior Elixir engineers are a small community where relationship tracking over time carries strategic value. Technical evaluation is complex in ways a standard notes field cannot accommodate. And data ownership is strategic — cross-referencing hiring outcomes with actual engineer performance post-hire requires owning the data model, not renting access to it.
 
-The clustering also revealed which problems were worth the most attention. Cluster 1 — reporting errors — turned out to be the single largest cost contributor at 101,520 PLN per year once we ran the cost model. Not because reports were the most frequently mentioned complaint, but because the business consequence was the largest: inaccurate reporting data touches every downstream decision. The full cost breakdown by cluster is in [Part 2 of this series](https://appunite.com/blog/hold-my-beer-building-custom-ats).
+This is a product-market fit problem, not a product quality problem. A tool built for one market, applied to a different market. The structural limitations in all seven clusters are features of what Recruitee built — they just do not serve Appunite's specific use case.
 
-One thing I had not anticipated: several complaints that appeared unrelated during the workshop turned out to share a single root cause once we wrote the cluster sentences. Two problems listed under different workflow areas both traced back to funnels being ineditable after creation. Without the explicit clustering step, those would have been counted separately — and the cost of fixing that one root cause would have been underestimated while the complexity was overstated.
-
-The ratio of 3–4 pain points per cluster also turned out to be meaningful. It is roughly what you expect from a tool in use for a year or more: by that point, users have found most of the surface friction, even if they have stopped registering it as friction.
+There is a second thing worth naming here, less comfortable than the structural analysis. When we ran the audit, several of the workarounds had become invisible. Manual calendar coordination. Memory-based interview feedback. The 23-day time-to-hire figure. These were not experienced as problems — they had become "how hiring works." One small adaptation at a time, the friction had accumulated until it was just the texture of the process. The team was not oblivious. The friction had simply stopped registering, which is a different thing, and the audit was what made it visible again.
 
 ---
 
-## What this approach revealed that "just asking" wouldn't
+## What this means for your tools
 
-The most interesting finding was not the 24 problems. It was the problems nobody had thought to report.
+This article is not a Recruitee review. It is a case study in what happens when a mature, specific process meets a generic tool. The recruitment software issues we found are a specific version of a more general pattern. If you manage a technical team and use any SaaS for a process that is central to how you work, the pattern is probably familiar.
 
-The clearest example: Recruitee told us our time-to-hire was 23 days. The real number was 31. Nobody had flagged this as a problem. Everyone was using the number the tool gave them, because questioning the tool's output at that level of detail had stopped being a habit. The expectation of accuracy had been abandoned so gradually that nobody could point to the moment it happened. The workaround — using the 23-day figure and treating it as roughly correct — was so automatic it had become invisible.
+The thing that made our audit productive was not the software we were auditing — it was the questions we asked. Three in particular cut through the normalized friction.
 
-This is the adapted-around problem in its clearest form. The pain is real and measurable. The signal is gone because the user gave up on accuracy and stopped asking.
+Are there metrics in your tool you cannot customize, where the vendor's definition does not match what your process actually needs to measure? In our case, "time-to-hire" meant one thing in the codebase and another in our actual pipeline. We did not know the gap was eight days until we measured it directly. If you are using tool-generated metrics to make decisions — headcount, capacity planning, team sizing — it is worth verifying that the calculation matches your process definition, not just the general-purpose one.
 
-Direct questioning would not have found this. "What bothers you about Recruitee's reporting?" would have produced complaints about interface quirks, missing filters, slow load times. The JTBD framing — "what are you trying to accomplish when you pull a time-to-hire report?" — surfaced the underlying job: getting an accurate number to make headcount decisions. Once the job was named, the gap between what the tool provided and what the job required became visible. The eight-day discrepancy had been there the whole time.
+Are there workflows you cannot modify, where the tool's structure forces your process to conform to its logic? The inelastic funnel structure and the fixed feedback form both fall here. The cost is not just friction — it is decisions made on data shaped by the tool's constraints rather than by what your process actually requires.
 
-We found other versions of the same pattern. Problems that participants had categorized as "just how hiring works" turned out to be tool-specific. When users described their actual goal rather than their experience with the current tool, the gap appeared. The JTBD question is not just a reframe — it creates a different kind of answer.
+Is there data in your tool you cannot cross-reference, where the information exists inside the system but cannot be queried in the ways your decisions require? Past candidates, assessment results, competency scores, longitudinal outcome data — these exist in our system as text in fields that cannot be searched or combined. The data is there. It is just not accessible in a useful form.
 
-The solvability filter caught one or two items that were process problems, not software problems. Without the filter, those would have been scoped into the build. Built. And not fixed. Because the root cause was never Recruitee.
-
-To give the numbers context: the total estimated annual cost came to 150,648 PLN, of which 85% is opportunity cost. The direct, measurable time losses amount to 22,524 PLN per year. The gap between those two figures is driven almost entirely by the reporting errors cluster and its downstream effect on hiring decisions. That is why the attribution assumption for Cluster 1 is the most important number to examine before committing. Appunite's assumption was that 50% of failed hires traced back to inaccurate reporting data — one number that moves the ROI from -74% to +75%. Changing it changes everything. The full financial breakdown is in [Part 2](https://appunite.com/blog/hold-my-beer-building-custom-ats).
-
-Structured methodology finds these things because it creates the conditions for them to surface. Direct questions get direct answers — which are incomplete by the nature of adapted-around pain. JTBD and CIT are specifically designed to get around the human tendency to stop noticing.
+If the answer to any of these is yes, the [SaaS Tax framework](https://www.appunite.com/blog/business-paying-for-100-saas-using-12) applies. The question is not whether your tool is good. The question is whether it is right for your specific use case — and whether the gap has become invisible enough that you have stopped asking.
 
 ---
 
-## How to do this yourself
+## Closing note
 
-This methodology does not require a research background. It requires blocking time, preparing templates, and being rigorous about the solvability filter. Any team lead can run this in a week.
+The audit is complete. The numbers are as honest as they can be given the constraints.
 
-**Seven steps:**
+24 problems across 7 clusters. Total estimated cost: 150,648 PLN/yr — 22,524 PLN/yr in direct costs that show up on timesheets, and 128,124 PLN/yr in opportunity costs that require attribution assumptions to reach. Cluster 1 alone accounts for 67% of the total, and its opportunity cost rests on the assumption that 50% of failed hires trace back to inaccurate reporting data. That assumption is reasonable. It cannot be proven.
 
-1. Pick one SaaS tool with documented friction — something your team complains about regularly, or that you suspect is mismatched with your actual process. The first article in this series ([The SaaS Tax](https://appunite.com/blog/the-saas-tax)) lays out why mismatched tools are worth examining systematically.
-2. Build the feature list from the vendor's documentation and a 30-minute walkthrough. Aim for completeness. Specificity matters more than speed here — a rough list produces rough results.
-3. Run the feature audit with 2–3 daily users. Calculate your usage ratio and required ratio. These numbers anchor everything that follows.
-4. Send the pain point collection template to workshop participants at least 24 hours in advance. Ask for five or more entries before the session. Pre-work is not optional — it changes the quality of what happens in the room.
-5. Run the 90-minute workshop. Individual scoring first, group calibration second. Extend to two hours if the energy is high.
-6. Cluster the pain points by feature area. Write the business consequence sentence for each cluster before moving to cost estimation. If you cannot write the sentence, the cluster is not ready.
-7. Apply the solvability filter to every cluster. Do not skip this step. This is the one that separates a rigorous assessment from a post-hoc justification.
+Against a build budget of 86,000 PLN, the evidence raises a question it cannot fully answer. Direct savings alone produce a -74% ROI. Including opportunity costs produces +75%. The case only works if a meaningful fraction of those opportunity costs are real — and the largest portion depends on a single attribution assumption that can be argued, not verified.
 
-**When you get to cost estimation, keep two columns visibly separate:**
-
-| | Column A: Direct costs only | Column B: Direct + opportunity |
-|---|---|---|
-| Annual cost of current pain | Time your team loses to workarounds | Direct costs + attributed opportunity costs |
-| Build budget | [your budget] | [same] |
-| ROI | (A − budget) ÷ budget | (B − budget) ÷ budget |
-| Payback period | Budget ÷ A savings | Budget ÷ B savings |
-| Break-even attribution | N/A | Minimum % of opportunity costs that must be real to justify the build |
-
-For Appunite's Recruitee assessment: build budget 86,000 PLN, Column A ROI -74%, Column B ROI +75%.
-
-Column A is the defensible case. Column B is the ambitious case. If the build only works in Column B, name the attribution assumption that drives the gap — and design a one-to-two week sanity check before committing. This is not academic caution; it is the difference between a decision you can defend under scrutiny and one you cannot. (See [Part 2](https://appunite.com/blog/hold-my-beer-building-custom-ats) for how Appunite handled this split and where the uncertainty in our own numbers lives.)
-
-The next post covers the full pain point breakdown — all 7 clusters, every pain point, and the cost methodology behind each number. If you want to see exactly how a specific cluster was costed, that post will have it. The methodology described here becomes concrete when you see the actual numbers it produced.
+That question — whether the assumptions hold, and whether the cost evidence actually justifies building — is what the next post addresses. The evidence is on the table. The verdict is not.
 
 ---
 
 ### Sources
 
-- Pendo — 2019 Feature Adoption Report: https://www.pendo.io/resources/the-2019-feature-adoption-report/
-- Nielsen Norman Group — Critical Incident Technique: https://www.nngroup.com/articles/critical-incident-technique/
-- Product School — Jobs to Be Done Framework: https://productschool.com/blog/product-fundamentals/jtbd-framework
-- GLIDR — Pain vs Frequency Scores: https://help.glidr.io/en/articles/2826779-pain-vs-frequency-scores
+- Part 1 — The SaaS Tax: https://www.appunite.com/blog/business-paying-for-100-saas-using-12
+- Part 2 — Hold My Beer (The Manifesto): https://www.appunite.com/blog/manifesto-building-our-own-ats
+- Part 4 — How to Discover What's Actually Broken in Your SaaS Tool: https://www.appunite.com/blog/how-to-discover-whats-actually-broken-in-your-saas-tool
